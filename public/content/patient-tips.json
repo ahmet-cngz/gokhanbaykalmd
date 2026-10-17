@@ -1,0 +1,1452 @@
+{
+  "version": 1,
+  "categories": [
+    {
+      "id": "general",
+      "title": {
+        "tr": "Genel bilgiler",
+        "en": "General information"
+      }
+    },
+    {
+      "id": "thyroid",
+      "title": {
+        "tr": "Tiroid",
+        "en": "Thyroid"
+      }
+    },
+    {
+      "id": "diabetes",
+      "title": {
+        "tr": "Diyabet",
+        "en": "Diabetes"
+      }
+    },
+    {
+      "id": "metabolism",
+      "title": {
+        "tr": "Metabolizma",
+        "en": "Metabolism"
+      }
+    },
+    {
+      "id": "bone-health",
+      "title": {
+        "tr": "Kemik sağlığı",
+        "en": "Bone health"
+      }
+    },
+    {
+      "id": "parathyroid",
+      "title": {
+        "tr": "Paratiroid",
+        "en": "Parathyroid"
+      }
+    },
+    {
+      "id": "womens-health",
+      "title": {
+        "tr": "Kadın sağlığı",
+        "en": "Women’s health"
+      }
+    }
+  ],
+  "articles": [
+    {
+      "id": "tiroid-nodulu",
+      "status": "published",
+      "category": "thyroid",
+      "updatedAt": "2026-10-17",
+      "featured": true,
+      "sourceDocument": "Tiroid_Nodulu_Hasta_Genel_Oneriler.docx",
+      "tr": {
+        "title": "Tiroid nodülü",
+        "summary": "Tiroid nodüllerinde tetkikler, takip, iyot kullanımı ve erken başvuru gerektiren belirtiler.",
+        "body": [
+          {
+            "type": "heading",
+            "text": "Tiroid nodülü nedir?"
+          },
+          {
+            "type": "paragraph",
+            "text": "Tiroid nodülü, boynun ön kısmındaki tiroid bezinde oluşan bir yumru veya doku farklılığıdır. Nodüller oldukça yaygındır ve büyük çoğunluğu iyi huyludur. Nodül saptanması kanser olduğunuz anlamına gelmez."
+          },
+          {
+            "type": "heading",
+            "text": "Hangi tetkikler gerekebilir?"
+          },
+          {
+            "type": "paragraph",
+            "text": "Doktorunuz tiroid fonksiyon testlerini (özellikle TSH) ve ultrasonografi (USG) bulgularını değerlendirir. Nodülün boyutu ve USG özelliklerine göre ince iğne aspirasyon biyopsisi gerekebilir. Her nodüle biyopsi yapılmaz. TSH düşükse bazı hastalarda tiroid sintigrafisi istenebilir."
+          },
+          {
+            "type": "heading",
+            "text": "Kontrollerinizi aksatmayın"
+          },
+          {
+            "type": "paragraph",
+            "text": "Takip aralıkları; nodülün USG özelliklerine, büyüklüğüne, biyopsi sonucuna ve kişisel risk durumunuza göre belirlenir. Her hastanın yılda bir USG yaptırması gerekmez. Eski ultrasonografi ve biyopsi raporlarınızı kontrolünüze getirin."
+          },
+          {
+            "type": "heading",
+            "text": "Beslenme ve iyot kullanımı"
+          },
+          {
+            "type": "paragraph",
+            "text": "Özel bir “nodül diyeti” yoktur; dengeli beslenin. İyotlu tuzu normal miktarda kullanabilirsiniz ancak iyot damlası, Lugol solüsyonu veya yosun/kelp gibi yüksek iyot içeren takviyeleri doktor önerisi olmadan kullanmayın. Gereksiz vitamin ve bitkisel ürünlerden kaçının."
+          },
+          {
+            "type": "heading",
+            "text": "İlaçlar ve tedavi"
+          },
+          {
+            "type": "paragraph",
+            "text": "Tiroid hormonlarınız normal ve nodülünüz iyi huyluysa çoğunlukla ilaç gerekmeyebilir. İyi huylu nodülü küçültmek amacıyla rutin levotiroksin kullanımı önerilmez. Gerekli hastalarda biyopsi, cerrahi veya diğer girişimsel tedaviler bireysel olarak planlanır."
+          },
+          {
+            "type": "heading",
+            "text": "Hangi belirtilerde erken başvurmalısınız?"
+          },
+          {
+            "type": "paragraph",
+            "text": "Boyunda hızla büyüyen şişlik, yeni gelişen veya ilerleyen ses kısıklığı, yutma güçlüğü, nefes darlığı ya da belirgin bası hissi olursa doktorunuza başvurun. Ani veya ciddi solunum güçlüğünde acil değerlendirme gerekir."
+          },
+          {
+            "type": "heading",
+            "text": "Gebelik ve diğer özel durumlar"
+          },
+          {
+            "type": "paragraph",
+            "text": "Gebeyseniz veya gebelik planlıyorsanız bunu doktorunuza bildirin. Gebelikte takip ve biyopsi kararı klinik duruma göre düzenlenir. Çocukluk döneminde boyun bölgesine radyoterapi öyküsü veya ailede tiroid kanseri varsa mutlaka paylaşın."
+          },
+          {
+            "type": "paragraph",
+            "text": "UNUTMAYIN: Nodüllerin çoğu iyi huyludur. Doğru yaklaşım, gereksiz tedaviden kaçınırken doktorunuzun önerdiği tetkik ve kontrolleri sürdürmektir."
+          },
+          {
+            "type": "paragraph",
+            "text": "Bu form genel bilgilendirme amaçlıdır; kişisel muayene ve hekim önerisinin yerine geçmez."
+          }
+        ]
+      },
+      "en": {
+        "title": "Thyroid nodules",
+        "summary": "Tests, follow-up, iodine use, and symptoms that need prompt assessment in thyroid nodules.",
+        "body": [
+          {
+            "type": "heading",
+            "text": "What is a thyroid nodule?"
+          },
+          {
+            "type": "paragraph",
+            "text": "A thyroid nodule is a lump or an area of different tissue in the thyroid gland at the front of the neck. Nodules are very common, and the vast majority are benign. Finding a nodule does not mean that you have cancer."
+          },
+          {
+            "type": "heading",
+            "text": "Which tests may be needed?"
+          },
+          {
+            "type": "paragraph",
+            "text": "Your doctor assesses thyroid-function tests, particularly TSH, and ultrasound findings. Depending on the size and ultrasound features of the nodule, a fine-needle aspiration biopsy may be needed. Not every nodule requires a biopsy. If TSH is low, a thyroid scan may be requested for some patients."
+          },
+          {
+            "type": "heading",
+            "text": "Keep your follow-up appointments"
+          },
+          {
+            "type": "paragraph",
+            "text": "Follow-up intervals depend on the nodule's ultrasound features, size, biopsy result, and your individual risk. Not everyone needs an annual ultrasound. Bring previous ultrasound and biopsy reports to your appointments."
+          },
+          {
+            "type": "heading",
+            "text": "Nutrition and iodine use"
+          },
+          {
+            "type": "paragraph",
+            "text": "There is no special ‘nodule diet’. Eat a balanced diet. You may use iodised salt in normal amounts, but do not use iodine drops, Lugol's solution, or high-iodine supplements such as seaweed/kelp without your doctor's recommendation. Avoid unnecessary vitamins and herbal products."
+          },
+          {
+            "type": "heading",
+            "text": "Medicines and treatment"
+          },
+          {
+            "type": "paragraph",
+            "text": "Medication is often unnecessary if your thyroid hormones are normal and your nodule is benign. Routine levothyroxine use to shrink a benign nodule is not recommended. When needed, biopsy, surgery, or other interventional treatments are planned individually."
+          },
+          {
+            "type": "heading",
+            "text": "Which symptoms require an earlier consultation?"
+          },
+          {
+            "type": "paragraph",
+            "text": "Contact your doctor for a rapidly growing neck swelling, new or worsening hoarseness, difficulty swallowing, shortness of breath, or a marked pressure sensation. Sudden or severe difficulty breathing requires emergency assessment."
+          },
+          {
+            "type": "heading",
+            "text": "Pregnancy and other special circumstances"
+          },
+          {
+            "type": "paragraph",
+            "text": "Tell your doctor if you are pregnant or planning pregnancy. Follow-up and biopsy decisions during pregnancy depend on the clinical situation. Be sure to mention any history of neck radiotherapy in childhood or thyroid cancer in your family."
+          },
+          {
+            "type": "paragraph",
+            "text": "REMEMBER: Most nodules are benign. The right approach is to avoid unnecessary treatment while continuing the tests and follow-up your doctor recommends."
+          },
+          {
+            "type": "paragraph",
+            "text": "This sheet provides general information and does not replace an individual medical examination or your doctor's advice."
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "path": "files/Tiroid_Nodulu_Hasta_Genel_Oneriler.docx",
+          "label": {
+            "tr": "Türkçe özgün belge (DOCX)",
+            "en": "Original Turkish document (DOCX)"
+          }
+        }
+      ]
+    },
+    {
+      "id": "hashimoto-tiroiditi",
+      "status": "published",
+      "category": "thyroid",
+      "updatedAt": "2026-10-17",
+      "featured": false,
+      "sourceDocument": "Hashimoto_Hasta_Genel_Oneriler.docx",
+      "tr": {
+        "title": "Hashimoto tiroiditi",
+        "summary": "Levotiroksin kullanımı, beslenme, takip aralıkları ve gebelik planlaması hakkında genel bilgiler.",
+        "body": [
+          {
+            "type": "paragraph",
+            "text": "Hashimoto tiroiditi, bağışıklık sisteminin tiroid bezini etkilediği kronik bir durumdur. Her hastada hormon eksikliği gelişmez. Düzenli takip ve gerektiğinde tedaviyle normal bir yaşam sürdürülebilir."
+          },
+          {
+            "type": "heading",
+            "text": "İlaç kullanımı (levotiroksin kullanıyorsanız)"
+          },
+          {
+            "type": "list",
+            "items": [
+              "İlacınızı her gün aynı saatte, yalnızca suyla, sabah aç karnına alın; kahvaltıdan önce 30–60 dakika bekleyin.",
+              "Demir ve kalsiyum desteklerini levotiroksinden en az 4 saat ayrı alın. Dozu kendiniz değiştirmeyin.",
+              "Alternatif olarak yatmadan önce, son yemekten en az 3–4 saat sonra düzenli kullanılabilir.",
+              "Tiroid hormonları normalse her Hashimoto hastasının ilaç kullanması gerekmez."
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "Beslenme ve takviyeler"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Sebze, meyve, baklagil, tam tahıl, yeterli protein ve zeytinyağı içeren dengeli beslenin.",
+              "Çölyak hastalığı veya başka tıbbi gereklilik yoksa glutensiz beslenmek zorunda değilsiniz.",
+              "Lugol, iyot damlası, deniz yosunu/kelp veya yüksek doz iyot takviyesini doktor önerisi olmadan kullanmayın.",
+              "Selenyum ve diğer takviyeler rutin olarak gerekli değildir; saptanan D vitamini, B12 veya demir eksiklikleri tedavi edilir.",
+              "Brokoli, lahana ve karnabaharı normal miktarlarda tüketebilirsiniz."
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "Günlük yaşam ve takip"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Haftada en az 150 dakika yürüyüş gibi hareketli aktivite yapın; uyku düzenine ve sigara kullanmamaya dikkat edin.",
+              "Levotiroksin dozu değişirse genellikle 6–8 hafta sonra TSH kontrolü yapılır; değerler stabilse çoğunlukla 6–12 ayda bir izlem uygundur.",
+              "İlaç kullanmıyor ve tiroid testleriniz normalse genellikle yılda bir ya da iki kez TSH kontrolü yeterlidir.",
+              "Anti-TPO / anti-Tg antikorlarını sürekli tekrar ettirmek ve rutin sık ultrason yaptırmak gerekmez.",
+              "Biyotin içeren saç-tırnak takviyesi alıyorsanız kan testinden önce hekiminize bildirin."
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "Gebelik planı ve uyarı işaretleri"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Gebelik planlıyorsanız TSH kontrolü yaptırın. Gebe kalırsanız erkenden hekiminize haber verin; ilaç dozu ve kontrol sıklığı değişebilir.",
+              "Boyunda hızla büyüyen şişlik, yeni ses kısıklığı, yutma güçlüğü, belirgin çarpıntı veya artan halsizlikte muayene olun."
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "UNUTMAYIN  Tedavinin amacı antikorları sıfırlamak değil, tiroid hormon düzeylerini uygun aralıkta tutmaktır."
+          },
+          {
+            "type": "paragraph",
+            "text": "Bu belge genel bilgilendirme içindir; kişisel ilaç ve takip planı hekiminiz tarafından belirlenir."
+          }
+        ]
+      },
+      "en": {
+        "title": "Hashimoto’s thyroiditis",
+        "summary": "General information on levothyroxine, nutrition, follow-up intervals, and pregnancy planning.",
+        "body": [
+          {
+            "type": "paragraph",
+            "text": "Hashimoto's thyroiditis is a chronic condition in which the immune system affects the thyroid gland. Not everyone develops thyroid hormone deficiency. Regular follow-up and treatment when needed can support a normal life."
+          },
+          {
+            "type": "heading",
+            "text": "Taking medication (if you use levothyroxine)"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Take your medicine at the same time each day, with water only, on an empty stomach in the morning. Wait 30–60 minutes before breakfast.",
+              "Take iron and calcium supplements at least 4 hours apart from levothyroxine. Do not change the dose yourself.",
+              "Alternatively, it may be taken consistently at bedtime, at least 3–4 hours after the last meal.",
+              "Not everyone with Hashimoto's thyroiditis needs medication if their thyroid hormone levels are normal."
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "Nutrition and supplements"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Eat a balanced diet that includes vegetables, fruit, legumes, whole grains, adequate protein, and olive oil.",
+              "You do not need a gluten-free diet unless you have coeliac disease or another medical reason.",
+              "Do not use Lugol's solution, iodine drops, seaweed/kelp, or high-dose iodine supplements without your doctor's recommendation.",
+              "Selenium and other supplements are not routinely necessary. Identified deficiencies in vitamin D, B12, or iron are treated.",
+              "You can eat broccoli, cabbage, and cauliflower in normal amounts."
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "Daily life and follow-up"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Do at least 150 minutes of physical activity such as walking each week. Maintain regular sleep habits and avoid smoking.",
+              "If your levothyroxine dose changes, TSH is usually checked after 6–8 weeks. Once levels are stable, follow-up every 6–12 months is usually appropriate.",
+              "If you are not taking medication and your thyroid tests are normal, checking TSH once or twice a year is usually sufficient.",
+              "There is no need to keep repeating anti-TPO/anti-Tg antibody tests or to have frequent routine ultrasound scans.",
+              "If you take hair or nail supplements containing biotin, tell your doctor before blood tests."
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "Planning pregnancy and warning signs"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Have your TSH checked if you are planning pregnancy. Inform your doctor early if you become pregnant; your medicine dose and the frequency of checks may need to change.",
+              "Arrange an examination for a rapidly growing neck swelling, new hoarseness, difficulty swallowing, marked palpitations, or increasing fatigue."
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "REMEMBER: The aim of treatment is to keep thyroid hormone levels in the appropriate range, rather than to reduce antibodies to zero."
+          },
+          {
+            "type": "paragraph",
+            "text": "This document provides general information. Your doctor determines your individual medication and follow-up plan."
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "path": "files/Hashimoto_Hasta_Genel_Oneriler.docx",
+          "label": {
+            "tr": "Türkçe özgün belge (DOCX)",
+            "en": "Original Turkish document (DOCX)"
+          }
+        }
+      ]
+    },
+    {
+      "id": "graves-hastaligi",
+      "status": "published",
+      "category": "thyroid",
+      "updatedAt": "2026-10-17",
+      "featured": false,
+      "sourceDocument": "Graves_Hastaligi_Hasta_Genel_Oneriler.docx",
+      "tr": {
+        "title": "Graves hastalığı",
+        "summary": "İlaç kullanımı, önemli yan etkiler, göz sağlığı ve uzun dönem takip önerileri.",
+        "body": [
+          {
+            "type": "paragraph",
+            "text": "Graves hastalığında tiroid bezi normalden fazla hormon üretir. Tedaviyle kontrol altına alınabilir. Düzenli ilaç kullanımı ve kan tahlili takibi önemlidir."
+          },
+          {
+            "type": "heading",
+            "text": "İlaç ve kontrol önerileri"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Metimazol veya propiltiyourasil (PTU) kullanıyorsanız ilacı doktorunuzun belirttiği dozda alın; kendi kendinize kesmeyin veya değiştirmeyin.",
+              "İlk dönemde tiroid hormonları genellikle 4–6 haftada bir, daha sonra klinik durumunuza göre kontrol edilir. TSH başlangıçta uzun süre düşük kalabilir.",
+              "Çarpıntı ve titreme için verilen beta bloker varsa önerildiği şekilde kullanın."
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "ÖNEMLİ: İlaç yan etkilerinde ne yapmalısınız?"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Antitiroid ilaç kullanırken ATEŞ, ŞİDDETLİ BOĞAZ AĞRISI veya AĞIZ YARASI olursa ilacı durdurun ve aynı gün acil değerlendirme/kan sayımı (nötrofil) için sağlık kuruluşuna başvurun.",
+              "Sarılık, koyu renkli idrar, belirgin kaşıntı, açık renkli dışkı, ciddi bulantı veya sağ üst karın ağrısında ilacı durdurup acilen karaciğer testleri için değerlendirilin.",
+              "Şiddetli çarpıntı, göğüs ağrısı, nefes darlığı, yüksek ateş veya bilinç değişikliğinde acile başvurun."
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "Gözler ve sigara"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Sigara içmeyin; dumanına maruz kalmaktan da kaçının. Sigara Graves göz hastalığının riskini ve şiddetini artırabilir. Sigara içiyorsanız bırakmaya yönelik destek alın.",
+              "Gözde kuruluk varsa suni gözyaşı gerekebilir. Yeni çift görme, gözde belirgin ağrı, görme azalması veya renkleri soluk görmede gecikmeden başvurun."
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "Beslenme ve günlük yaşam"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Özel bir Graves diyeti zorunlu değildir. Dengeli beslenin, yeterli sıvı ve protein alın; aşırı kafein çarpıntıyı artırabilir.",
+              "Doktor önerisi olmadan iyot/kelp-yosun takviyeleri, Lugol damlası veya yüksek doz iyot içeren ürünleri kullanmayın.",
+              "Tiroid hormonları yüksekken yoğun egzersizden kaçının; hormonlar kontrol altına alındıkça aktiviteyi kademeli artırın."
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "Gebelik, girişimler ve uzun dönem takip"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Gebelik düşünüyorsanız önceden doktorunuzla plan yapın. Gebelik şüphesi/pozitif testte ilaç seçimi ve doz için hemen başvurun; kontrolsüz ilaç kullanmayın.",
+              "Kontrastlı görüntüleme veya iyot içeren ilaçlar planlanıyorsa Graves hastalığınızı ve kullandığınız ilaçları sağlık ekibine bildirin.",
+              "İlaç tedavisi sonrası nüks gelişebilir; gerekli hastalarda radyoaktif iyot veya cerrahi seçenekleri değerlendirilir."
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "Bu form genel bilgilendirme içindir; kişisel tedavi planınızın yerine geçmez."
+          },
+          {
+            "type": "paragraph",
+            "text": "Kaynaklar: American Thyroid Association (2016) hipertiroidi kılavuzu; European Thyroid Association (2018) Graves kılavuzu; EUGOGO (2021) Graves orbitopati kılavuzu."
+          }
+        ]
+      },
+      "en": {
+        "title": "Graves’ disease",
+        "summary": "Medication, important side effects, eye health, and long-term follow-up.",
+        "body": [
+          {
+            "type": "paragraph",
+            "text": "In Graves' disease, the thyroid gland produces more hormone than normal. Treatment can bring the condition under control. Taking medicines regularly and attending blood-test follow-up are important."
+          },
+          {
+            "type": "heading",
+            "text": "Medicines and follow-up"
+          },
+          {
+            "type": "list",
+            "items": [
+              "If you take methimazole or propylthiouracil (PTU), take the dose prescribed by your doctor. Do not stop it or change the dose yourself.",
+              "Thyroid hormones are usually checked every 4–6 weeks initially, and subsequently according to your clinical condition. TSH may remain low for a long time at the start of treatment.",
+              "If you have been prescribed a beta blocker for palpitations or tremor, use it as directed."
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "IMPORTANT: What should you do about medicine side effects?"
+          },
+          {
+            "type": "list",
+            "items": [
+              "If you develop FEVER, a SEVERE SORE THROAT, or MOUTH ULCERS while taking antithyroid medication, stop the medicine and attend a healthcare facility the same day for urgent assessment and a blood count (neutrophils).",
+              "If you develop jaundice, dark urine, marked itching, pale stools, severe nausea, or pain in the upper right abdomen, stop the medicine and seek urgent assessment for liver tests.",
+              "Go to an emergency department for severe palpitations, chest pain, shortness of breath, high fever, or changes in consciousness."
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "Eyes and smoking"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Do not smoke and avoid exposure to cigarette smoke. Smoking can increase the risk and severity of Graves' eye disease. If you smoke, seek support to stop smoking.",
+              "Artificial tears may be needed for dry eyes. Seek prompt assessment for new double vision, significant eye pain, reduced vision, or colours appearing faded."
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "Nutrition and daily life"
+          },
+          {
+            "type": "list",
+            "items": [
+              "A special Graves' diet is not required. Eat a balanced diet and take adequate fluids and protein. Excess caffeine may worsen palpitations.",
+              "Do not use iodine or kelp/seaweed supplements, Lugol's drops, or products containing high doses of iodine without your doctor's recommendation.",
+              "Avoid intense exercise while thyroid hormone levels are high. Increase activity gradually as the hormones come under control."
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "Pregnancy, procedures, and long-term follow-up"
+          },
+          {
+            "type": "list",
+            "items": [
+              "If you are considering pregnancy, plan ahead with your doctor. If pregnancy is suspected or a test is positive, contact your doctor immediately about the choice and dose of medication. Do not use medicines without medical supervision.",
+              "If contrast-enhanced imaging or iodine-containing medicines are planned, tell your healthcare team about your Graves' disease and the medicines you take.",
+              "Relapse may occur after drug treatment. Radioactive iodine or surgery may be considered for patients who need them."
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "This information sheet provides general information and does not replace your individual treatment plan."
+          },
+          {
+            "type": "paragraph",
+            "text": "Sources: American Thyroid Association (2016) hyperthyroidism guideline; European Thyroid Association (2018) Graves' disease guideline; EUGOGO (2021) Graves' orbitopathy guideline."
+          }
+        ]
+      },
+      "attachments": []
+    },
+    {
+      "id": "gestasyonel-diyabet",
+      "status": "published",
+      "category": "diabetes",
+      "updatedAt": "2026-10-17",
+      "featured": false,
+      "sourceDocument": "Gestasyonel_Diyabet_Hasta_Genel_Oneriler.docx",
+      "tr": {
+        "title": "Gestasyonel diyabet (gebelik şekeri)",
+        "summary": "Gebelikte kan şekeri takibi, beslenme, hareket ve doğum sonrası kontroller.",
+        "body": [
+          {
+            "type": "paragraph",
+            "text": "Gebelik şekeri, hamilelik sırasında ortaya çıkan kan şekeri yüksekliğidir. Düzenli takip ve uygun tedaviyle anne ve bebeğin sağlığı korunabilir."
+          },
+          {
+            "type": "heading",
+            "text": "Evde kan şekeri takibi"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Hekiminizin önerdiği sıklıkta açlıkta ve ana öğünlerden sonra ölçüm yapın; sonuçları kaydedip kontrole getirin."
+            ]
+          },
+          {
+            "type": "table",
+            "headers": [
+              "Ölçüm zamanı",
+              "Genel hedef"
+            ],
+            "rows": [
+              [
+                "Açlık",
+                "95 mg/dL’nin altında"
+              ],
+              [
+                "Yemekten 1 saat sonra",
+                "140 mg/dL’nin altında"
+              ],
+              [
+                "Yemekten 2 saat sonra",
+                "120 mg/dL’nin altında"
+              ]
+            ]
+          },
+          {
+            "type": "list",
+            "items": [
+              "Tokluk süresi ilk lokmadan itibaren sayılır. Doktorunuz birinci veya ikinci saat ölçümünü önerebilir; hedefler kişiye göre değişebilir."
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "Beslenme"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Öğünleri düzenli tüketin; uzun süre aç kalmayın. Gerekiyorsa diyetisyenle kişiye özel plan oluşturun.",
+              "Şekerli içecekler, meyve suları, tatlılar ve fazla miktarda beyaz unlu gıdaları sınırlayın.",
+              "Tam tahıl, sebze, baklagil, uygun porsiyonda meyve ve yeterli protein tercih edin; karbonhidratı tamamen kesmeyin.",
+              "Gebelikte aç kalma diyeti, ketojenik diyet veya hızlı kilo verme programı uygulamayın."
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "Hareket ve günlük yaşam"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Kadın doğum hekiminiz sakınca görmüyorsa yemekten sonra 10–15 dakika yürüyüş yapın; gün içinde aktif kalın.",
+              "Önerilen gebelik izlemlerini, ultrason ve bebeğin büyüme kontrollerini aksatmayın."
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "İlaçlar ve dikkat edilmesi gereken durumlar"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Beslenme ve hareketle hedeflere ulaşılamazsa doktorunuz insülin tedavisi önerebilir. İnsülin bebeğinizi korumak amacıyla kullanılır.",
+              "Tekrarlayan hedef üstü ölçümleri bekletmeden tedavi ekibinize bildirin; ilaç dozunu kendi kendinize değiştirmeyin.",
+              "İnsülin kullanıyorsanız kan şekeri 70 mg/dL’nin altına düşerse hipoglisemi planınızı uygulayın ve sağlık ekibinizle iletişime geçin.",
+              "Şiddetli kusma, sıvı alamama, bilinç değişikliği, belirgin halsizlik, nefes darlığı veya bebeğin hareketlerinde azalma varsa acil değerlendirme alın."
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "Doğum sonrası takip"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Doğumdan 4–12 hafta sonra 75 gram şeker yükleme testi (OGTT) yaptırın; kan şekeri normale dönmüş olsa bile bu test önemlidir.",
+              "Daha sonra en geç 1–3 yılda bir diyabet taramasına devam edin. Emzirme hem anne hem bebek için faydalıdır."
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "Önemli: Bu belge genel bilgilendirme amaçlıdır; bireysel tedavi ve ölçüm planınız için takip eden hekiminizin önerileri geçerlidir."
+          },
+          {
+            "type": "paragraph",
+            "text": "Kaynak: ADA, Standards of Care in Diabetes—2026, “Management of Diabetes in Pregnancy”."
+          }
+        ]
+      },
+      "en": {
+        "title": "Gestational diabetes",
+        "summary": "Blood glucose monitoring, nutrition, activity, and follow-up after delivery.",
+        "body": [
+          {
+            "type": "paragraph",
+            "text": "Gestational diabetes is high blood glucose that develops during pregnancy. Regular monitoring and appropriate treatment can help protect the health of both mother and baby."
+          },
+          {
+            "type": "heading",
+            "text": "Monitoring blood glucose at home"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Check your fasting blood glucose and your blood glucose after main meals as often as your doctor recommends. Record the results and bring them to your follow-up appointment."
+            ]
+          },
+          {
+            "type": "table",
+            "headers": [
+              "Measurement time",
+              "General target"
+            ],
+            "rows": [
+              [
+                "Fasting",
+                "Below 95 mg/dL"
+              ],
+              [
+                "1 hour after a meal",
+                "Below 140 mg/dL"
+              ],
+              [
+                "2 hours after a meal",
+                "Below 120 mg/dL"
+              ]
+            ]
+          },
+          {
+            "type": "list",
+            "items": [
+              "Count the time after a meal from the first bite. Your doctor may recommend measuring at either one or two hours; individual targets may differ."
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "Nutrition"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Eat regular meals and avoid long periods without food. If needed, work with a dietitian to develop an individual plan.",
+              "Limit sugary drinks, fruit juices, sweets, and large amounts of foods made with white flour.",
+              "Choose whole grains, vegetables, legumes, appropriate portions of fruit, and adequate protein. Do not eliminate carbohydrates completely.",
+              "Do not follow fasting diets, ketogenic diets, or rapid weight-loss programmes during pregnancy."
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "Physical activity and daily life"
+          },
+          {
+            "type": "list",
+            "items": [
+              "If your obstetrician considers it safe, walk for 10–15 minutes after meals and stay active during the day.",
+              "Keep your recommended antenatal appointments, ultrasound examinations, and checks of your baby's growth."
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "Medicines and situations that need attention"
+          },
+          {
+            "type": "list",
+            "items": [
+              "If nutrition and activity do not achieve your targets, your doctor may recommend insulin treatment. Insulin is used to help protect your baby.",
+              "Report repeated above-target readings to your care team promptly. Do not change your medicine dose yourself.",
+              "If you use insulin and your blood glucose falls below 70 mg/dL, follow your hypoglycaemia plan and contact your healthcare team.",
+              "Seek emergency assessment if you have severe vomiting, cannot take fluids, develop changes in consciousness, marked weakness or shortness of breath, or notice reduced movements of your baby."
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "Follow-up after delivery"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Have a 75-gram oral glucose tolerance test (OGTT) 4–12 weeks after delivery. This test is important even if your blood glucose has returned to normal.",
+              "Continue diabetes screening at least once every 1–3 years thereafter. Breastfeeding benefits both mother and baby."
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "Important: This document provides general information. Follow your treating doctor's recommendations for your individual treatment and monitoring plan."
+          },
+          {
+            "type": "paragraph",
+            "text": "Source: ADA, Standards of Care in Diabetes—2026, ‘Management of Diabetes in Pregnancy’."
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "path": "files/Gestasyonel_Diyabet_Hasta_Genel_Oneriler.docx",
+          "label": {
+            "tr": "Türkçe özgün belge (DOCX)",
+            "en": "Original Turkish document (DOCX)"
+          }
+        }
+      ]
+    },
+    {
+      "id": "osteoporoz",
+      "status": "published",
+      "category": "bone-health",
+      "updatedAt": "2026-10-17",
+      "featured": false,
+      "sourceDocument": "Osteoporoz_Hasta_Genel_Oneriler.docx",
+      "tr": {
+        "title": "Osteoporoz",
+        "summary": "Kemik sağlığı, düşmelerden korunma, ilaçların doğru kullanımı ve takip.",
+        "body": [
+          {
+            "type": "paragraph",
+            "text": "Osteoporoz, kemiklerin kırılganlığını artırır. İlaçların düzenli kullanımı, doğru beslenme ve düşmelerin önlenmesi kırık riskini azaltmaya yardımcı olur."
+          },
+          {
+            "type": "heading",
+            "text": "Beslenme ve kemik sağlığı"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Günlük toplam kalsiyum alımınız çoğu 50 yaş üzeri kadın ve 70 yaş üzeri erkekte yaklaşık 1.200 mg; 50–70 yaş erkeklerde 1.000 mg olmalıdır. Öncelik besinlerdir (süt, yoğurt, peynir ve uygun alternatifleri).",
+              "D vitamini gereksinimi yaşa ve sağlık durumuna göre değişir; gerekli takviyeyi doktorunuzun önerdiği dozda kullanın. Kendi kendinize yüksek doz başlamayın.",
+              "Yeterli protein içeren dengeli beslenin; sigarayı bırakın, alkolü sınırlandırın."
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "Egzersiz ve düşmelerden korunma"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Sağlığınıza uygunsa düzenli yürüyüş gibi ağırlık taşıyan aktiviteler, haftada 2–3 gün kas güçlendirme ve denge egzersizleri yapın.",
+              "Evde kaygan halıları ve kabloları kaldırın; iyi aydınlatma, kaymaz ayakkabı ve gerekiyorsa tutunma barları kullanın.",
+              "Omurga kırığı riski yüksekse ani öne eğilme, ağır yükle gövdeyi bükme ve kontrolsüz dönme hareketlerinden kaçının; egzersizi hekiminiz/fizyoterapistinizle planlayın."
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "İlaçlarınızı doğru kullanın"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Ağızdan bisfosfonat kullanıyorsanız ilacı sabah aç karnına yalnızca suyla alın; sonrasında en az 30 dakika (bazı ilaçlarda 60 dakika) uzanmayın ve başka ilaç/yiyecek almayın. Kendi ilacınızın talimatını izleyin.",
+              "Denosumab (Prolia) enjeksiyonu genellikle 6 ayda bir uygulanır. Hekim planı olmadan geciktirmeyin veya kesmeyin: özellikle omurga kırığı riski artabilir. Kesilecekse başka kemik koruyucu tedavi planlanmalıdır.",
+              "Kalsiyum ve D vitamini tedavisi, böbrek fonksiyonu ve diğer ilaçlarınızla birlikte kişiye özel düzenlenir. Tedavi değişikliğini doktorunuzla görüşün."
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "Kontroller ve dikkat edilmesi gereken durumlar"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Kemik yoğunluğu (DXA) ve gerekli kan testlerini doktorunuzun belirlediği aralıklarla yaptırın. Boy kısalması veya yeni sırt-bel ağrısını bildirin.",
+              "Hafif bir düşme ile kırık, ani şiddetli sırt/bel ağrısı, açıklanamayan kalça-kasık/uyluk ağrısı ya da çene bölgesinde iyileşmeyen yara olursa sağlık kuruluşuna başvurun.",
+              "Diş tedavisi planlıyorsanız osteoporoz ilacı kullandığınızı diş hekiminize söyleyin; diş işlemi için ilacınızı kendiliğinizden kesmeyin."
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "UNUTMAYIN: Tedavinin amacı yalnızca kemik yoğunluğunu artırmak değil, kırıkları önlemektir. Doktorunuza danışmadan tedaviyi bırakmayın."
+          },
+          {
+            "type": "paragraph",
+            "text": "Bu belge genel bilgilendirme amaçlıdır; gebelik, böbrek hastalığı, böbrek taşı ve diğer özel durumlarda öneriler bireyselleştirilmelidir."
+          }
+        ]
+      },
+      "en": {
+        "title": "Osteoporosis",
+        "summary": "Bone health, preventing falls, correct medication use, and follow-up.",
+        "body": [
+          {
+            "type": "paragraph",
+            "text": "Osteoporosis makes bones more fragile. Taking medicines regularly, appropriate nutrition, and preventing falls help reduce the risk of fractures."
+          },
+          {
+            "type": "heading",
+            "text": "Nutrition and bone health"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Total daily calcium intake should be around 1,200 mg for most women over 50 and men over 70, and 1,000 mg for men aged 50–70. Prioritise food sources such as milk, yoghurt, cheese, and suitable alternatives.",
+              "Vitamin D needs vary with age and health. Use any necessary supplement at the dose your doctor recommends. Do not start high doses yourself.",
+              "Eat a balanced diet with adequate protein, stop smoking, and limit alcohol."
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "Exercise and preventing falls"
+          },
+          {
+            "type": "list",
+            "items": [
+              "If appropriate for your health, do regular weight-bearing activities such as walking, plus muscle-strengthening and balance exercises on 2–3 days each week.",
+              "Remove slippery rugs and loose cables at home. Use good lighting, non-slip footwear, and grab rails if needed.",
+              "If you have a high risk of spinal fractures, avoid sudden forward bending, bending your trunk while lifting heavy loads, and uncontrolled twisting. Plan exercise with your doctor or physiotherapist."
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "Use your medicines correctly"
+          },
+          {
+            "type": "list",
+            "items": [
+              "If you take an oral bisphosphonate, take it in the morning on an empty stomach with water only. Afterwards, do not lie down or take other medicines or food for at least 30 minutes (60 minutes for some medicines). Follow the instructions for your own medicine.",
+              "Denosumab (Prolia) injections are usually given every 6 months. Do not delay or stop them without a plan from your doctor: the risk of fractures, especially spinal fractures, may increase. Another bone-protective treatment must be planned if it is stopped.",
+              "Calcium and vitamin D treatment is tailored to the individual, taking kidney function and other medicines into account. Discuss treatment changes with your doctor."
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "Follow-up and situations that need attention"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Have bone-density (DXA) scans and necessary blood tests at the intervals your doctor recommends. Report loss of height or new back or lower-back pain.",
+              "Attend a healthcare facility for a fracture after a minor fall, sudden severe back/lower-back pain, unexplained hip, groin, or thigh pain, or a non-healing wound in the jaw area.",
+              "If dental treatment is planned, tell your dentist that you take osteoporosis medication. Do not stop your medication yourself for a dental procedure."
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "REMEMBER: The aim of treatment is to prevent fractures, not only to increase bone density. Do not stop treatment without consulting your doctor."
+          },
+          {
+            "type": "paragraph",
+            "text": "This document provides general information. Recommendations must be individualised for pregnancy, kidney disease, kidney stones, and other special circumstances."
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "path": "files/Osteoporoz_Hasta_Genel_Oneriler.docx",
+          "label": {
+            "tr": "Türkçe özgün belge (DOCX)",
+            "en": "Original Turkish document (DOCX)"
+          }
+        }
+      ]
+    },
+    {
+      "id": "primer-hiperparatiroidi",
+      "status": "published",
+      "category": "parathyroid",
+      "updatedAt": "2026-10-17",
+      "featured": false,
+      "sourceDocument": "Primer_Hiperparatiroidi_Hasta_Genel_Oneriler.docx",
+      "tr": {
+        "title": "Primer hiperparatiroidi",
+        "summary": "Sıvı tüketimi, kalsiyum ve D vitamini, ilaçlar ve düzenli takip hakkında bilgiler.",
+        "body": [
+          {
+            "type": "heading",
+            "text": "Hastalığınız nedir?"
+          },
+          {
+            "type": "paragraph",
+            "text": "Primer hiperparatiroidi, paratiroid bezlerinden fazla parathormon (PTH) salgılanmasıdır. Kanda kalsiyum yüksekliğine, böbrek taşına ve kemiklerde zayıflamaya yol açabilir. Bazı hastalarda belirti olmayabilir; düzenli takip önemlidir."
+          },
+          {
+            "type": "heading",
+            "text": "Sıvı tüketimi"
+          },
+          {
+            "type": "paragraph",
+            "text": "Doktorunuz sıvı kısıtlaması önermediyse gün boyunca yeterli su için; susuz kalmayın. Böbrek veya kalp yetmezliğiniz varsa içmeniz gereken sıvı miktarını doktorunuzla belirleyin. Böbrek taşı öykünüz varsa sıvı alımı özellikle önemlidir."
+          },
+          {
+            "type": "heading",
+            "text": "Kalsiyum ve D vitamini"
+          },
+          {
+            "type": "paragraph",
+            "text": "Kalsiyumu beslenmenizden normal, yaşınıza uygun miktarda alın; süt, yoğurt ve peynir gibi gıdaları gereksiz yere kesmeyin. Kalsiyumu aşırı kısıtlamak doğru değildir. D vitamini eksikliği varsa doktor kontrolünde yerine konabilir. Kendi kendinize yüksek doz kalsiyum, D vitamini veya başka takviyeler kullanmayın."
+          },
+          {
+            "type": "heading",
+            "text": "Beslenme ve hareket"
+          },
+          {
+            "type": "paragraph",
+            "text": "Dengeli beslenin, aşırı tuz tüketimini azaltın. Düzenli yürüyüş ve kas güçlendirici egzersizler kemik sağlığı için yararlıdır. Düşme riskiniz varsa egzersiz planını doktorunuzla birlikte belirleyin. Sigara kullanmayın, alkolü sınırlandırın."
+          },
+          {
+            "type": "heading",
+            "text": "İlaçlar ve diğer hastalıklar"
+          },
+          {
+            "type": "paragraph",
+            "text": "Kullandığınız tüm ilaçları doktorunuza bildirin. Özellikle tiyazid grubu idrar söktürücüler ve lityum kalsiyum düzeyini etkileyebilir. Reçeteli ilaçlarınızı kendi kendinize kesmeyin."
+          },
+          {
+            "type": "heading",
+            "text": "Kontrollerinizi aksatmayın"
+          },
+          {
+            "type": "paragraph",
+            "text": "Doktorunuz kalsiyum, böbrek fonksiyonları ve D vitamini ölçümleri; kemik yoğunluğu (DEXA) ve gerektiğinde böbrek görüntülemesi isteyebilir. Ameliyat gerekip gerekmediği; kalsiyum düzeyi, yaş, böbrek ve kemik bulgularıyla birlikte değerlendirilir. Ameliyat önerildiyse geciktirmeden cerrahınızla görüşün."
+          },
+          {
+            "type": "heading",
+            "text": "Hangi belirtilerde başvurmalısınız?"
+          },
+          {
+            "type": "paragraph",
+            "text": "Yeni başlayan yan/bel ağrısı ve idrarda kan (böbrek taşı belirtisi), kırık veya yeni şiddetli kemik ağrısı durumunda değerlendirme isteyin. Şiddetli kusma, belirgin susuzluk, bilinç bulanıklığı veya aşırı halsizlik gelişirse acil sağlık hizmetine başvurun."
+          },
+          {
+            "type": "paragraph",
+            "text": "ÖNEMLİ: Bu form genel bilgi içindir; tedavi ve takip planınız hekiminizin önerilerine göre kişiselleştirilir."
+          },
+          {
+            "type": "paragraph",
+            "text": "Bilimsel dayanak: Fifth International Workshop on Primary Hyperparathyroidism (2022)."
+          }
+        ]
+      },
+      "en": {
+        "title": "Primary hyperparathyroidism",
+        "summary": "Information on fluids, calcium and vitamin D, medication, and regular follow-up.",
+        "body": [
+          {
+            "type": "heading",
+            "text": "What is your condition?"
+          },
+          {
+            "type": "paragraph",
+            "text": "Primary hyperparathyroidism means that the parathyroid glands produce too much parathyroid hormone (PTH). It can lead to high blood calcium, kidney stones, and weakened bones. Some patients have no symptoms. Regular follow-up is important."
+          },
+          {
+            "type": "heading",
+            "text": "Fluid intake"
+          },
+          {
+            "type": "paragraph",
+            "text": "Drink enough water throughout the day unless your doctor has recommended restricting fluids. Avoid dehydration. If you have kidney or heart failure, agree the appropriate fluid intake with your doctor. Fluid intake is particularly important if you have a history of kidney stones."
+          },
+          {
+            "type": "heading",
+            "text": "Calcium and vitamin D"
+          },
+          {
+            "type": "paragraph",
+            "text": "Get a normal, age-appropriate amount of calcium from your diet. Do not unnecessarily eliminate foods such as milk, yoghurt, and cheese. Excessively restricting calcium is not appropriate. Vitamin D deficiency may be treated under medical supervision. Do not take high doses of calcium, vitamin D, or other supplements yourself."
+          },
+          {
+            "type": "heading",
+            "text": "Nutrition and physical activity"
+          },
+          {
+            "type": "paragraph",
+            "text": "Eat a balanced diet and reduce excessive salt intake. Regular walking and muscle-strengthening exercises benefit bone health. If you are at risk of falling, plan exercise together with your doctor. Do not smoke, and limit alcohol."
+          },
+          {
+            "type": "heading",
+            "text": "Medicines and other conditions"
+          },
+          {
+            "type": "paragraph",
+            "text": "Tell your doctor about all the medicines you take. Thiazide diuretics and lithium in particular can affect calcium levels. Do not stop prescribed medicines yourself."
+          },
+          {
+            "type": "heading",
+            "text": "Keep your follow-up appointments"
+          },
+          {
+            "type": "paragraph",
+            "text": "Your doctor may request calcium, kidney-function, and vitamin D tests, bone-density (DEXA) scans, and kidney imaging when needed. Whether surgery is needed is assessed using your calcium level, age, and kidney and bone findings. If surgery is recommended, consult your surgeon without delay."
+          },
+          {
+            "type": "heading",
+            "text": "Which symptoms should prompt you to seek care?"
+          },
+          {
+            "type": "paragraph",
+            "text": "Request assessment for new flank/lower-back pain and blood in the urine (possible signs of kidney stones), a fracture, or new severe bone pain. Seek emergency medical care for severe vomiting, marked thirst, confusion, or extreme weakness."
+          },
+          {
+            "type": "paragraph",
+            "text": "IMPORTANT: This sheet provides general information. Your treatment and follow-up plan are personalised according to your doctor's recommendations."
+          },
+          {
+            "type": "paragraph",
+            "text": "Scientific basis: Fifth International Workshop on Primary Hyperparathyroidism (2022)."
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "path": "files/Primer_Hiperparatiroidi_Hasta_Genel_Oneriler.docx",
+          "label": {
+            "tr": "Türkçe özgün belge (DOCX)",
+            "en": "Original Turkish document (DOCX)"
+          }
+        }
+      ]
+    },
+    {
+      "id": "obezite",
+      "status": "published",
+      "category": "metabolism",
+      "updatedAt": "2026-10-17",
+      "featured": false,
+      "sourceDocument": "Obezite_Hasta_Genel_Oneriler.docx",
+      "tr": {
+        "title": "Obezite",
+        "summary": "Sürdürülebilir beslenme ve hareket alışkanlıkları, gerçekçi hedefler ve tedavi takibi.",
+        "body": [
+          {
+            "type": "paragraph",
+            "text": "Obezite, yalnızca irade veya görünümle ilgili değil, uzun dönem takip gerektirebilen kronik bir sağlık durumudur. Küçük ve sürdürülebilir değişiklikler bile sağlığınızı iyileştirebilir."
+          },
+          {
+            "type": "heading",
+            "text": "Beslenme"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Sebze, meyve, baklagil, tam tahıl, yoğurt, yumurta, balık ve zeytinyağı gibi besinleri tercih edin.",
+              "Şekerli içecekleri, sık atıştırmayı, büyük porsiyonları ve aşırı işlenmiş gıdaları azaltın.",
+              "Yavaş yiyin; açlık ve tokluk hissinizi takip edin. Keskin yasaklar yerine sürdürülebilir bir plan oluşturun.",
+              "Tek bir “mucize diyet” yoktur. Size uygun beslenme planını diyetisyeninizle belirleyin."
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "Hareket ve uyku"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Hedefiniz haftada 150–300 dakika orta tempolu hareket ve en az 2 gün kuvvet egzersizi olsun; başlangıçta küçük adımlar da değerlidir.",
+              "Uzun süre oturmayı bölün. Eklem veya kalp hastalığınız varsa egzersizi hekiminizle planlayın.",
+              "Düzenli uyuyun (çoğu yetişkin için 7–9 saat). Horlama ve gündüz uykululuk varsa uyku apnesi açısından değerlendirme isteyin."
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "Gerçekçi hedefler ve davranış değişikliği"
+          },
+          {
+            "type": "list",
+            "items": [
+              "İlk aşamada 6–12 ay içinde mevcut kilonuzun yaklaşık %5–10’unu kaybetmek yararlı bir hedef olabilir; kişisel hedefiniz farklı olabilir.",
+              "Yalnızca tartıya değil; bel çevresi, kan basıncı, kan şekeri, hareket kapasitesi ve yaşam kalitesine de odaklanın.",
+              "Haftada bir benzer koşullarda tartılabilir; öğün, hareket ve uyku alışkanlıklarınızı kısaca kaydedebilirsiniz.",
+              "Kilo kaybı yavaşlayabilir veya geri alım olabilir. Bu durumda kendinizi suçlamadan planı sağlık ekibinizle güncelleyin."
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "İlaç tedavisi ve takip"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Gerektiğinde beslenme ve egzersize ek olarak obezite ilaçları veya metabolik cerrahi değerlendirilebilir; karar kişiye özeldir.",
+              "Zayıflama çayı, internetten alınan ilaçlar veya denetimsiz takviyeler kullanmayın. Reçeteli ilacı kendi kendinize kesmeyin.",
+              "Kan basıncı, kan şekeri/HbA1c, kolesterol, karaciğer yağlanması ve uyku apnesi yönünden düzenli kontrole gidin.",
+              "Gebelik planlıyorsanız kullandığınız kilo verme ilaçlarını önceden hekiminizle görüşün."
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "Ne zaman sağlık ekibine başvurmalı? Hızlı veya açıklanamayan kilo değişimi, belirgin horlama/uykuda nefes durması, tedavi yan etkileri, tekrarlayan kontrolsüz yeme atakları veya ruhsal zorlanma varsa görüşün."
+          },
+          {
+            "type": "paragraph",
+            "text": "Bu bilgilendirme kişisel muayene ve tedavi planının yerine geçmez."
+          }
+        ]
+      },
+      "en": {
+        "title": "Obesity",
+        "summary": "Sustainable nutrition and activity habits, realistic goals, and treatment follow-up.",
+        "body": [
+          {
+            "type": "paragraph",
+            "text": "Obesity is a chronic health condition that may require long-term follow-up, rather than simply being a matter of willpower or appearance. Even small, sustainable changes can improve your health."
+          },
+          {
+            "type": "heading",
+            "text": "Nutrition"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Choose foods such as vegetables, fruit, legumes, whole grains, yoghurt, eggs, fish, and olive oil.",
+              "Reduce sugary drinks, frequent snacking, large portions, and highly processed foods.",
+              "Eat slowly and pay attention to hunger and fullness. Develop a sustainable plan rather than strict prohibitions.",
+              "There is no single ‘miracle diet’. Work with your dietitian to choose a nutrition plan that suits you."
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "Physical activity and sleep"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Aim for 150–300 minutes of moderate-intensity activity each week and strength exercises on at least 2 days. Small steps are worthwhile when starting out.",
+              "Break up long periods of sitting. If you have joint or heart disease, plan exercise with your doctor.",
+              "Keep regular sleep habits (7–9 hours for most adults). If you snore or feel sleepy during the day, request an assessment for sleep apnoea."
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "Realistic goals and behaviour change"
+          },
+          {
+            "type": "list",
+            "items": [
+              "An initial loss of around 5–10% of your current weight over 6–12 months may be a useful goal; your individual goal may differ.",
+              "Focus on waist circumference, blood pressure, blood glucose, physical capacity, and quality of life as well as the number on the scale.",
+              "You may weigh yourself once a week under similar conditions and keep brief notes on meals, physical activity, and sleep habits.",
+              "Weight loss may slow, or weight may be regained. If this happens, update your plan with your healthcare team without blaming yourself."
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "Medication and follow-up"
+          },
+          {
+            "type": "list",
+            "items": [
+              "When needed, obesity medicines or metabolic surgery may be considered alongside nutrition and exercise. The decision is individual.",
+              "Do not use slimming teas, medicines bought online, or unregulated supplements. Do not stop prescribed medication yourself.",
+              "Attend regular checks for blood pressure, blood glucose/HbA1c, cholesterol, fatty liver, and sleep apnoea.",
+              "If you are planning pregnancy, discuss any weight-loss medicines you take with your doctor in advance."
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "When should you contact your healthcare team? Seek advice for rapid or unexplained weight changes, significant snoring or pauses in breathing during sleep, treatment side effects, recurrent episodes of uncontrolled eating, or psychological distress."
+          },
+          {
+            "type": "paragraph",
+            "text": "This information does not replace an individual medical examination and treatment plan."
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "path": "files/Obezite_Hasta_Genel_Oneriler.docx",
+          "label": {
+            "tr": "Türkçe özgün belge (DOCX)",
+            "en": "Original Turkish document (DOCX)"
+          }
+        }
+      ]
+    },
+    {
+      "id": "pmos",
+      "status": "published",
+      "category": "womens-health",
+      "updatedAt": "2026-10-17",
+      "featured": false,
+      "sourceDocument": "PKOS_Hasta_Genel_Oneriler.docx",
+      "keywords": [
+        "PKOS",
+        "PCOS",
+        "PMOS"
+      ],
+      "tr": {
+        "title": "Poliendokrin metabolik over sendromu (PMOS)",
+        "summary": "Beslenme, hareket, adet takibi, ruh sağlığı ve gebelik planlamasına yönelik öneriler.",
+        "body": [
+          {
+            "type": "paragraph",
+            "text": "PMOS, adet düzenini, cilt ve tüylenmeyi, metabolik sağlığı ve üreme sağlığını etkileyebilen bir durumdur. Düzenli takip ve sürdürülebilir yaşam alışkanlıkları belirtilerin yönetilmesine yardımcı olur."
+          },
+          {
+            "type": "heading",
+            "text": "Beslenme"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Sebze, meyve, baklagil, tam tahıl, balık, yoğurt ve zeytinyağını içeren dengeli, Akdeniz tipi beslenmeyi tercih edin.",
+              "Şekerli içecekleri, tatlıları, beyaz unlu ve aşırı işlenmiş gıdaları azaltın. Öğünlerde yeterli protein ve lif almaya çalışın.",
+              "PMOS için herkese üstün olduğu kanıtlanmış tek bir diyet yoktur. Uzun süre sürdürebileceğiniz beslenme biçimi en uygunudur.",
+              "Fazla kilonuz varsa, doktorunuzla birlikte ulaşılabilir bir kilo yönetimi hedefi belirleyin. Normal kiloluysanız kilo vermeniz gerekmez."
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "Hareket ve egzersiz"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Haftada toplam 150–300 dakika orta şiddette aktivite (örneğin tempolu yürüyüş) hedefleyin.",
+              "Haftada en az 2 gün kas güçlendirici egzersiz yapın. Uzun süre hareketsiz oturmamaya çalışın.",
+              "Egzersiz kilo kaybı olmasa bile metabolik sağlık için yararlıdır."
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "Uyku ve ruh sağlığı"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Düzenli saatlerde uyuyun; çoğu yetişkin için gecede 7–9 saat uyku uygundur.",
+              "Belirgin horlama, uykuda nefes durması veya gündüz aşırı uyku hali varsa doktorunuza bildirin.",
+              "Kaygı, çökkünlük veya beden algısıyla ilgili güçlükler yaşıyorsanız destek istemekten çekinmeyin."
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "Adet takibi ve kadın sağlığı"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Adet tarihlerinizi kaydedin. 90 günden uzun süre adet görmezseniz doktorunuza başvurun.",
+              "Uzun süren adet düzensizliklerinde rahim iç tabakasının korunması için doktorunuz ilaç önerebilir.",
+              "Aşırı veya düzensiz kanama olduğunda değerlendirme isteyin."
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "Kontroller"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Tansiyon, kan şekeri ve kan yağlarınızın önerilen aralıklarla kontrol edilmesini sağlayın.",
+              "PMOS’ta kan şekeri değerlendirmesi tanıda yapılır; kişisel risk durumuna göre genellikle 1–3 yılda bir tekrarlanır.",
+              "Kilo değişiklikleri, adet düzeni, akne ve tüylenme yakınmalarını kontrollerde paylaşın."
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "İlaçlar, takviyeler ve gebelik planı"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Metformin, doğum kontrol hapı ve diğer tedaviler her hasta için gerekli değildir; doktorunuzla birlikte karar verilir.",
+              "İnozitol gibi takviyelerin faydası sınırlı ve kişiden kişiye değişken olabilir. Takviyeleri doktorunuza danışarak kullanın.",
+              "Gebelik planlıyorsanız bunu önceden hekiminize bildirin; gebelik isteyen hastaların takip ve tedavisi farklıdır.",
+              "Sigara kullanıyorsanız bırakmaya yönelik destek alın."
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "Unutmayın: PMOS yönetiminde tek bir “mucize” diyet veya takviye yoktur. Düzenli takip ve size uygun sürdürülebilir alışkanlıklar en önemli adımdır."
+          },
+          {
+            "type": "paragraph",
+            "text": "Kaynak: 2023 International Evidence-based Guideline for the Assessment and Management of Polycystic Ovary Syndrome."
+          }
+        ]
+      },
+      "en": {
+        "title": "Polyendocrine metabolic ovarian syndrome (PMOS)",
+        "summary": "Recommendations on nutrition, activity, menstrual tracking, mental health, and pregnancy planning.",
+        "body": [
+          {
+            "type": "paragraph",
+            "text": "PMOS is a condition that can affect menstrual cycles, skin and hair growth, metabolic health, and reproductive health. Regular follow-up and sustainable lifestyle habits help manage symptoms."
+          },
+          {
+            "type": "heading",
+            "text": "Nutrition"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Choose a balanced, Mediterranean-style diet that includes vegetables, fruit, legumes, whole grains, fish, yoghurt, and olive oil.",
+              "Reduce sugary drinks, sweets, foods made with white flour, and highly processed foods. Aim for adequate protein and fibre at meals.",
+              "No single diet has been shown to be superior for everyone with PMOS. The best approach is one you can maintain over the long term.",
+              "If you have excess weight, set an achievable weight-management goal with your doctor. You do not need to lose weight if your weight is normal."
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "Physical activity and exercise"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Aim for a total of 150–300 minutes of moderate-intensity activity each week, such as brisk walking.",
+              "Do muscle-strengthening exercises on at least 2 days each week. Try to avoid long periods of sitting without moving.",
+              "Exercise benefits metabolic health even without weight loss."
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "Sleep and mental health"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Keep regular sleep times. Most adults need 7–9 hours of sleep a night.",
+              "Tell your doctor if you have significant snoring, pauses in breathing during sleep, or excessive daytime sleepiness.",
+              "Do not hesitate to seek support if you experience anxiety, low mood, or difficulties with body image."
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "Tracking periods and women's health"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Record your period dates. Contact your doctor if you go more than 90 days without a period.",
+              "For prolonged menstrual irregularity, your doctor may recommend medication to protect the lining of the uterus.",
+              "Request an assessment for excessive or irregular bleeding."
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "Follow-up"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Have your blood pressure, blood glucose, and blood lipids checked at the recommended intervals.",
+              "In PMOS, blood glucose is assessed at diagnosis and usually checked again every 1–3 years, depending on your individual risk.",
+              "Discuss weight changes, menstrual patterns, acne, and unwanted hair growth at your follow-up appointments."
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "Medicines, supplements, and pregnancy planning"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Metformin, contraceptive pills, and other treatments are not necessary for every patient. Decisions are made together with your doctor.",
+              "The benefit of supplements such as inositol may be limited and may vary between individuals. Consult your doctor before using supplements.",
+              "Tell your doctor in advance if you are planning pregnancy. Follow-up and treatment differ for patients who want to become pregnant.",
+              "If you smoke, seek support to stop smoking."
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "Remember: There is no single ‘miracle’ diet or supplement for PMOS. Regular follow-up and sustainable habits that suit you are the most important step."
+          },
+          {
+            "type": "paragraph",
+            "text": "Source: 2023 International Evidence-based Guideline for the Assessment and Management of Polycystic Ovary Syndrome."
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "path": "files/PKOS_Hasta_Genel_Oneriler.docx",
+          "label": {
+            "tr": "Türkçe özgün belge (DOCX)",
+            "en": "Original Turkish document (DOCX)"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ornek-hasta-notu",
+      "status": "draft",
+      "category": "thyroid",
+      "updatedAt": "2026-10-17",
+      "featured": false,
+      "tr": {
+        "title": "Örnek hasta notu — başlığı değiştirin",
+        "summary": "Doktorun hazırladığı kısa açıklamayı buraya yazın.",
+        "body": [
+          {
+            "type": "paragraph",
+            "text": "Doktorun yayımlamak istediği metni buraya ekleyin. Yayıma hazır olduğunda status alanını published olarak değiştirin."
+          },
+          {
+            "type": "heading",
+            "text": "Alt başlık"
+          },
+          {
+            "type": "list",
+            "items": [
+              "İlk madde",
+              "İkinci madde"
+            ]
+          }
+        ]
+      },
+      "attachments": []
+    }
+  ]
+}
