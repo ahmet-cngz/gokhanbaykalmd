@@ -64,3 +64,13 @@ docs/                    Editing guide and original source documents
 `App.js` composes the page; feature components own their local UI state. Shared hooks handle browser side effects. The patient JSON remains in `public/content/` so it can be replaced on the host without recompiling the application. Bundled visual assets belong in `src/assets/`.
 
 Run regression checks with `CI=true npm test -- --watchAll=false --runInBand` and build with `npm run build`.
+
+## GitHub Pages
+
+Production URL: https://ahmet-cngz.github.io/gokhanbaykalmd/
+
+The workflow in `.github/workflows/deploy-pages.yml` tests, builds, and deploys pushes to `develop`. It can also be started manually from the Actions tab. The `homepage` field in `package.json` ensures scripts, styles, patient JSON, and downloads use the repository's `/gokhanbaykalmd/` base path.
+
+The repository owner must enable **Settings → Pages → Build and deployment → Source: GitHub Actions** once. Afterward, successful pushes to `develop` deploy automatically.
+
+To update patient content on GitHub Pages, edit `public/content/patient-tips.json` and any attachments, commit, and push. Pages serves deployed files; it does not expose a writable server directory. The workflow includes content changes in the next deployment.
