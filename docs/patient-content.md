@@ -72,7 +72,11 @@ Eight Turkish DOCX handouts from `docs/patient-sources/` have been transcribed i
 The gestational diabetes handout also uses the following supported block:
 
 ```json
-{ "type": "table", "headers": ["Measurement time", "General target"], "rows": [["Fasting", "Below 95 mg/dL"]] }
+{
+  "type": "table",
+  "headers": ["Measurement time", "General target"],
+  "rows": [["Fasting", "Below 95 mg/dL"]]
+}
 ```
 
 `keywords` is an optional array of search aliases. The PMOS article includes `PKOS`, `PCOS`, and `PMOS`, while retaining the PMOS wording used in the supplied document.

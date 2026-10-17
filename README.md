@@ -28,7 +28,7 @@ Deploy the generated `build/` directory. For hosting under a subdirectory, confi
 - `public/documents/riza-gokhan-baykal-cv.docx`: original downloadable CV.
 - `public/index.html`: page title, description, and sharing metadata.
 
-Publication and presentation details are transcribed from the supplied document. Google Fonts supplies DM Sans and Libre Caslon Display; system font fallbacks are included. No backend or credentials are required.
+Publication and presentation details are transcribed from the supplied document. Nunito is self-hosted in `src/assets/fonts/` under the included SIL Open Font License 1.1, with Turkish characters and system font fallbacks. No backend or credentials are required.
 
 ## Patient recommendations
 
@@ -74,3 +74,13 @@ The workflow in `.github/workflows/deploy-pages.yml` tests, builds, and deploys 
 The repository owner must enable **Settings → Pages → Build and deployment → Source: GitHub Actions** once. Afterward, successful pushes to `develop` deploy automatically.
 
 To update patient content on GitHub Pages, edit `public/content/patient-tips.json` and any attachments, commit, and push. Pages serves deployed files; it does not expose a writable server directory. The workflow includes content changes in the next deployment.
+
+## Code style
+
+Use arrow functions for components, hooks, helpers, and callbacks. Shared language values and locale mappings live in `src/constants/languages.js`; use `Language.ENGLISH` and `Language.TURKISH` in JavaScript. The patient JSON retains `en` and `tr` keys as its public content format.
+
+Separate imports, hook effects, guard clauses, and returns with blank lines. Use braces for control flow. `.prettierrc.json` defines formatting; ESLint enforces function and spacing conventions. Run `npm run lint` before committing.
+
+Use imports rooted at `src`, such as `import AcademicProfile from "components/profile/AcademicProfile"`. `jsconfig.json` configures this for the build, tests, and editor. ESLint rejects relative imports, orders imports alphabetically within dependency groups, and separates external packages from internal modules. The deployment workflow runs lint before tests and the production build.
+
+Run `npm run format` to format all supported project files using single quotes (including JSX), or `npm run format:check` to check formatting. JSON retains double quotes as required by its syntax.

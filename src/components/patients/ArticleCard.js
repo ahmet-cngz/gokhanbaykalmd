@@ -1,16 +1,9 @@
-import { localArticle } from "../../utils/patientContent";
-import {
-  articlePrefix,
-  formatArticleDate,
-} from "../../utils/patientNavigation";
+import { Language } from 'constants/languages';
+import { contentRoot, localArticle } from 'utils/patientContent';
+import { articlePrefix, formatArticleDate } from 'utils/patientNavigation';
 
-export default function ArticleCard({
-  article,
-  language,
-  categoryTitle,
-  onOpen,
-}) {
-  const tr = language === "tr";
+const ArticleCard = ({ article, language, categoryTitle, onOpen }) => {
+  const tr = language === Language.TURKISH;
   const content = localArticle(article, language);
   const href = `${articlePrefix}${article.id}`;
   const open = (event) => {
@@ -19,12 +12,23 @@ export default function ArticleCard({
   };
 
   return (
-    <article
-      className={`advice-card${article.featured ? " advice-card-featured" : ""}`}
-    >
-      <div className="advice-card-top">
+    <article className={`advice-card${article.featured ? ' advice-card-featured' : ''}`}>
+      {article.image && (
+        <img
+          className='advice-card-art'
+          src={`${contentRoot}${article.image}`}
+          alt=''
+          aria-hidden='true'
+          loading='lazy'
+          decoding='async'
+          onError={({ currentTarget }) => {
+            currentTarget.hidden = true;
+          }}
+        />
+      )}
+      <div className='advice-card-top'>
         <span>{categoryTitle}</span>
-        {article.featured && <span>{tr ? "ÖNE ÇIKAN" : "FEATURED"}</span>}
+        {article.featured && <span>{tr ? 'ÖNE ÇIKAN' : 'FEATURED'}</span>}
       </div>
       <h3 lang={content.language}>
         <a href={href} onClick={open}>
@@ -32,18 +36,14 @@ export default function ArticleCard({
         </a>
       </h3>
       <p lang={content.language}>{content.summary}</p>
-      <div className="advice-card-footer">
-        <time dateTime={article.updatedAt}>
-          {formatArticleDate(article.updatedAt, language)}
-        </time>
-        <a
-          href={href}
-          onClick={open}
-          aria-label={`${tr ? "Oku" : "Read"}: ${content.title}`}
-        >
-          {tr ? "Notu oku" : "Read note"} <span aria-hidden="true">↗</span>
+      <div className='advice-card-footer'>
+        <time dateTime={article.updatedAt}>{formatArticleDate(article.updatedAt, language)}</time>
+        <a href={href} onClick={open} aria-label={`${tr ? 'Oku' : 'Read'}: ${content.title}`}>
+          {tr ? 'Notu oku' : 'Read note'} <span aria-hidden='true'>↗</span>
         </a>
       </div>
     </article>
   );
-}
+};
+
+export default ArticleCard;

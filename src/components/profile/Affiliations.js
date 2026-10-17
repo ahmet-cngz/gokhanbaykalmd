@@ -1,27 +1,28 @@
-import SectionHeading from "../common/SectionHeading";
-import { memberships, languages } from "../../data/profile";
-export default function Affiliations({ t }) {
+import SectionHeading from 'components/common/SectionHeading';
+import { memberships, languages } from 'data/profile';
+
+const Affiliations = ({ t }) => {
   return (
-    <section id="affiliations" className="cv-section">
+    <section id='affiliations' className='cv-section'>
       <SectionHeading
-        number="05"
-        eyebrow={t("PROFESSIONAL COMMUNITY")}
-        title={t("Affiliations & languages")}
+        number='05'
+        eyebrow={t('PROFESSIONAL COMMUNITY')}
+        title={t('Affiliations & languages')}
       />
-      <div className="affiliation-columns">
+      <div className='affiliation-columns'>
         <div>
-          <h3 className="column-heading">{t("Society memberships")}</h3>
+          <h3 className='column-heading'>{t('Society memberships')}</h3>
           {memberships.map(([name, detail]) => (
-            <div className="membership" key={name}>
+            <div className='membership' key={name}>
               <h4>{t(name)}</h4>
               <p>{t(detail)}</p>
             </div>
           ))}
         </div>
         <div>
-          <h3 className="column-heading">{t("Languages & assessments")}</h3>
+          <h3 className='column-heading'>{t('Languages & assessments')}</h3>
           {languages.map(([name, detail, extra]) => (
-            <div className="language" key={name}>
+            <div className='language' key={name}>
               <h4>{t(name)}</h4>
               <p>
                 {t(detail)}
@@ -34,13 +35,15 @@ export default function Affiliations({ t }) {
               </p>
             </div>
           ))}
-          <p className="assessment-note">
+          <p className='assessment-note'>
             {t(
-              "Swedish, French, and German levels are based on Folkuniversitetet online test certificates.",
+              'Swedish, French, and German levels are based on Folkuniversitetet online test certificates.',
             )}
           </p>
         </div>
       </div>
     </section>
   );
-}
+};
+
+export default Affiliations;

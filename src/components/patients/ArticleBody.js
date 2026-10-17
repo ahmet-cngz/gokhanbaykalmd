@@ -1,18 +1,18 @@
-export default function ArticleBody({ blocks }) {
+const ArticleBody = ({ blocks }) => {
   return (
-    <div className="advice-body">
+    <div className='advice-body'>
       {blocks.map((block, index) => {
         switch (block.type) {
-          case "heading":
+          case 'heading':
             return <h4 key={index}>{block.text}</h4>;
-          case "table":
+          case 'table':
             return (
-              <div className="advice-table" key={index}>
+              <div className='advice-table' key={index}>
                 <table>
                   <thead>
                     <tr>
                       {block.headers.map((header, column) => (
-                        <th scope="col" key={column}>
+                        <th scope='col' key={column}>
                           {header}
                         </th>
                       ))}
@@ -30,7 +30,7 @@ export default function ArticleBody({ blocks }) {
                 </table>
               </div>
             );
-          case "list":
+          case 'list':
             return (
               <ul key={index}>
                 {block.items.map((item, itemIndex) => (
@@ -44,4 +44,6 @@ export default function ArticleBody({ blocks }) {
       })}
     </div>
   );
-}
+};
+
+export default ArticleBody;

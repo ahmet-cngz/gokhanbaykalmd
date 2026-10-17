@@ -16,13 +16,144 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "lint": "eslint src --max-warnings=0",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
   },
   "eslintConfig": {
     "extends": [
       "react-app",
       "react-app/jest"
-    ]
+    ],
+    "rules": {
+      "func-style": [
+        "error",
+        "expression"
+      ],
+      "prefer-arrow-callback": "error",
+      "curly": [
+        "error",
+        "all"
+      ],
+      "padding-line-between-statements": [
+        "error",
+        {
+          "blankLine": "always",
+          "prev": "import",
+          "next": "*"
+        },
+        {
+          "blankLine": "any",
+          "prev": "import",
+          "next": "import"
+        },
+        {
+          "blankLine": "always",
+          "prev": "*",
+          "next": [
+            "return",
+            "if",
+            "for",
+            "try"
+          ]
+        },
+        {
+          "blankLine": "always",
+          "prev": [
+            "if",
+            "for",
+            "try"
+          ],
+          "next": "*"
+        },
+        {
+          "blankLine": "always",
+          "prev": [
+            "const",
+            "let"
+          ],
+          "next": "expression"
+        },
+        {
+          "blankLine": "always",
+          "prev": "expression",
+          "next": [
+            "const",
+            "let"
+          ]
+        },
+        {
+          "blankLine": "always",
+          "prev": "block-like",
+          "next": "*"
+        }
+      ],
+      "no-restricted-syntax": [
+        "error",
+        {
+          "selector": "FunctionExpression",
+          "message": "Use an arrow function instead."
+        }
+      ],
+      "no-restricted-imports": [
+        "error",
+        {
+          "patterns": [
+            {
+              "group": [
+                "./**",
+                "../**"
+              ],
+              "message": "Use a src-root import, such as components/profile/AcademicProfile."
+            }
+          ]
+        }
+      ],
+      "import/order": [
+        "error",
+        {
+          "groups": [
+            "builtin",
+            "external",
+            "internal",
+            [
+              "parent",
+              "sibling",
+              "index"
+            ]
+          ],
+          "newlines-between": "always",
+          "alphabetize": {
+            "order": "asc",
+            "caseInsensitive": true
+          }
+        }
+      ],
+      "import/first": "error",
+      "import/no-duplicates": "error",
+      "import/newline-after-import": [
+        "error",
+        {
+          "count": 1
+        }
+      ]
+    },
+    "settings": {
+      "import/internal-regex": "^(App|assets|components|constants|data|hooks|styles|utils|tests)(/|$)",
+      "import/resolver": {
+        "node": {
+          "paths": [
+            "src"
+          ],
+          "extensions": [
+            ".js",
+            ".jsx",
+            ".json"
+          ]
+        }
+      }
+    }
   },
   "browserslist": {
     "production": [
@@ -36,5 +167,8 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "https://ahmet-cngz.github.io/gokhanbaykalmd"
+  "homepage": "https://ahmet-cngz.github.io/gokhanbaykalmd",
+  "devDependencies": {
+    "prettier": "^3.9.10"
+  }
 }

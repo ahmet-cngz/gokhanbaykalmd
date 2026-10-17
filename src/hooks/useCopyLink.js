@@ -1,6 +1,6 @@
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from 'react';
 
-export default function useCopyLink(duration = 3500) {
+const useCopyLink = (duration = 3500) => {
   const [copied, setCopied] = useState(false);
   const [fallback, setFallback] = useState(false);
 
@@ -20,10 +20,21 @@ export default function useCopyLink(duration = 3500) {
   }, []);
 
   useEffect(() => {
-    if (!copied) return;
+    if (!copied) {
+      return;
+    }
+
     const timer = setTimeout(() => setCopied(false), duration);
+
     return () => clearTimeout(timer);
   }, [copied, duration]);
 
-  return { copied, fallback, copyLink, reset };
-}
+  return {
+    copied,
+    fallback,
+    copyLink,
+    reset,
+  };
+};
+
+export default useCopyLink;

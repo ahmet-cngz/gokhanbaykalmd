@@ -207,7 +207,8 @@
             "en": "Original Turkish document (DOCX)"
           }
         }
-      ]
+      ],
+      "image": "images/thyroid.png"
     },
     {
       "id": "hashimoto-tiroiditi",
@@ -364,7 +365,8 @@
             "en": "Original Turkish document (DOCX)"
           }
         }
-      ]
+      ],
+      "image": "images/thyroid.png"
     },
     {
       "id": "graves-hastaligi",
@@ -527,7 +529,8 @@
           }
         ]
       },
-      "attachments": []
+      "attachments": [],
+      "image": "images/thyroid.png"
     },
     {
       "id": "gestasyonel-diyabet",
@@ -556,23 +559,11 @@
           },
           {
             "type": "table",
-            "headers": [
-              "Ölçüm zamanı",
-              "Genel hedef"
-            ],
+            "headers": ["Ölçüm zamanı", "Genel hedef"],
             "rows": [
-              [
-                "Açlık",
-                "95 mg/dL’nin altında"
-              ],
-              [
-                "Yemekten 1 saat sonra",
-                "140 mg/dL’nin altında"
-              ],
-              [
-                "Yemekten 2 saat sonra",
-                "120 mg/dL’nin altında"
-              ]
+              ["Açlık", "95 mg/dL’nin altında"],
+              ["Yemekten 1 saat sonra", "140 mg/dL’nin altında"],
+              ["Yemekten 2 saat sonra", "120 mg/dL’nin altında"]
             ]
           },
           {
@@ -659,23 +650,11 @@
           },
           {
             "type": "table",
-            "headers": [
-              "Measurement time",
-              "General target"
-            ],
+            "headers": ["Measurement time", "General target"],
             "rows": [
-              [
-                "Fasting",
-                "Below 95 mg/dL"
-              ],
-              [
-                "1 hour after a meal",
-                "Below 140 mg/dL"
-              ],
-              [
-                "2 hours after a meal",
-                "Below 120 mg/dL"
-              ]
+              ["Fasting", "Below 95 mg/dL"],
+              ["1 hour after a meal", "Below 140 mg/dL"],
+              ["2 hours after a meal", "Below 120 mg/dL"]
             ]
           },
           {
@@ -750,7 +729,8 @@
             "en": "Original Turkish document (DOCX)"
           }
         }
-      ]
+      ],
+      "image": "images/diabetes.png"
     },
     {
       "id": "osteoporoz",
@@ -899,7 +879,8 @@
             "en": "Original Turkish document (DOCX)"
           }
         }
-      ]
+      ],
+      "image": "images/bone-health.png"
     },
     {
       "id": "primer-hiperparatiroidi",
@@ -1056,7 +1037,8 @@
             "en": "Original Turkish document (DOCX)"
           }
         }
-      ]
+      ],
+      "image": "images/parathyroid.png"
     },
     {
       "id": "obezite",
@@ -1211,7 +1193,8 @@
             "en": "Original Turkish document (DOCX)"
           }
         }
-      ]
+      ],
+      "image": "images/metabolism.png"
     },
     {
       "id": "pmos",
@@ -1220,11 +1203,7 @@
       "updatedAt": "2026-10-17",
       "featured": false,
       "sourceDocument": "PKOS_Hasta_Genel_Oneriler.docx",
-      "keywords": [
-        "PKOS",
-        "PCOS",
-        "PMOS"
-      ],
+      "keywords": ["PKOS", "PCOS", "PMOS"],
       "tr": {
         "title": "Poliendokrin metabolik over sendromu (PMOS)",
         "summary": "Beslenme, hareket, adet takibi, ruh sağlığı ve gebelik planlamasına yönelik öneriler.",
@@ -1417,7 +1396,8 @@
             "en": "Original Turkish document (DOCX)"
           }
         }
-      ]
+      ],
+      "image": "images/womens-health.png"
     },
     {
       "id": "ornek-hasta-notu",
@@ -1439,10 +1419,7 @@
           },
           {
             "type": "list",
-            "items": [
-              "İlk madde",
-              "İkinci madde"
-            ]
+            "items": ["İlk madde", "İkinci madde"]
           }
         ]
       },

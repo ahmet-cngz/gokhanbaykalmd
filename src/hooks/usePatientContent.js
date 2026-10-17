@@ -1,39 +1,55 @@
-import { useEffect, useState } from "react";
-import { contentRoot, validateContent } from "../utils/patientContent";
+import { useEffect, useState } from 'react';
 
-export default function usePatientContent() {
+import { contentRoot, validateContent } from 'utils/patientContent';
+
+const usePatientContent = () => {
   const [data, setData] = useState(null);
-  const [status, setStatus] = useState("loading");
+  const [status, setStatus] = useState('loading');
   const [attempt, setAttempt] = useState(0);
 
   useEffect(() => {
     const controller = new AbortController();
     let current = true;
-    setStatus("loading");
 
-    async function loadContent() {
+    setStatus('loading');
+
+    const loadContent = async () => {
       try {
         const response = await fetch(`${contentRoot}patient-tips.json`, {
-          cache: "no-store",
+          cache: 'no-store',
           signal: controller.signal,
         });
-        if (!response.ok) throw new Error("Content unavailable");
+
+        if (!response.ok) {
+          throw new Error('Content unavailable');
+        }
+
         const content = validateContent(await response.json());
+
         if (current) {
           setData(content);
-          setStatus("ready");
+          setStatus('ready');
         }
       } catch (error) {
-        if (current && error.name !== "AbortError") setStatus("error");
+        if (current && error.name !== 'AbortError') {
+          setStatus('error');
+        }
       }
-    }
+    };
 
     loadContent();
+
     return () => {
       current = false;
       controller.abort();
     };
   }, [attempt]);
 
-  return { data, status, retry: () => setAttempt((value) => value + 1) };
-}
+  return {
+    data,
+    status,
+    retry: () => setAttempt((value) => value + 1),
+  };
+};
+
+export default usePatientContent;

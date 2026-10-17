@@ -18,7 +18,7 @@
   margin: 8px 0 13px;
 }
 .advice-title-row h2 {
-  font: 46px/1.15 var(--serif);
+  font: 46px/1.15 var(--font-display);
   letter-spacing: -0.6px;
   scroll-margin-top: 130px;
 }
@@ -84,12 +84,12 @@
   font-size: 12px;
   transition: background 180ms ease;
 }
-.advice-categories button[aria-pressed="true"] {
+.advice-categories button[aria-pressed='true'] {
   background: var(--accent);
   border-color: var(--accent);
   color: white;
 }
-.advice-categories button:hover:not([aria-pressed="true"]) {
+.advice-categories button:hover:not([aria-pressed='true']) {
   background: var(--light);
 }
 .advice-grid {
@@ -98,6 +98,9 @@
   gap: 18px;
 }
 .advice-card {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   padding: 26px;
@@ -105,10 +108,51 @@
   background: #f4f5f0;
   min-width: 0;
 }
+.advice-card-art {
+  position: absolute;
+  z-index: -1;
+  top: 20px;
+  right: -12px;
+  width: 48%;
+  height: 190px;
+  object-fit: contain;
+  object-position: right center;
+  opacity: 0.28;
+  filter: grayscale(1) sepia(0.35) hue-rotate(65deg);
+  mask-image: linear-gradient(to right, transparent, #000 65%);
+  pointer-events: none;
+  user-select: none;
+  transition:
+    opacity 220ms ease,
+    transform 320ms ease;
+}
+.advice-card-art[hidden] {
+  display: none;
+}
+.advice-card:hover .advice-card-art,
+.advice-card:focus-within .advice-card-art {
+  opacity: 0.36;
+  transform: scale(1.04);
+}
 .advice-card-featured {
   grid-column: 1/-1;
   background: #e5eade;
   border-top: 3px solid var(--accent);
+}
+.advice-card-featured .advice-card-art {
+  width: 35%;
+  height: calc(100% - 30px);
+  max-height: 260px;
+  right: 20px;
+}
+.advice-image-credit {
+  margin: 16px 0 0;
+  font-size: 11px;
+  color: #647269;
+}
+.advice-image-credit a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 .advice-card-top {
   display: flex;
@@ -122,7 +166,7 @@
   letter-spacing: 1.2px;
 }
 .advice-card h3 {
-  font: 31px/1.25 var(--serif);
+  font: 31px/1.25 var(--font-display);
   margin: 17px 0 12px;
   max-width: 580px;
 }
@@ -168,7 +212,7 @@
   font-size: 13px;
 }
 .advice-state h3 {
-  font: 28px var(--serif);
+  font: 28px var(--font-display);
   color: var(--ink);
   margin-bottom: 9px;
 }
@@ -214,7 +258,7 @@
   color: var(--muted);
 }
 .advice-article-title {
-  font: 40px/1.2 var(--serif);
+  font: 40px/1.2 var(--font-display);
   letter-spacing: -0.3px;
   max-width: 650px;
 }
@@ -362,11 +406,20 @@
   }
 }
 @media (prefers-reduced-motion: reduce) {
+  .advice-card-art {
+    transition: none;
+  }
+  .advice-card:hover .advice-card-art,
+  .advice-card:focus-within .advice-card-art {
+    transform: none;
+  }
   .advice-categories button {
     transition: none;
   }
 }
 @media print {
+  .advice-card-art,
+  .advice-image-credit,
   .advice-tools,
   .advice-categories,
   .advice-reader-footer,
