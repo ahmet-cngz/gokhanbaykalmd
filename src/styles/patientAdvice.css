@@ -1,5 +1,5 @@
 .patient-section {
-  padding-top: 58px;
+  padding-top: 38px;
   scroll-margin-top: 14px;
 }
 .patient-section-heading {
@@ -17,7 +17,8 @@
   align-items: center;
   margin: 8px 0 13px;
 }
-.advice-title-row h2 {
+.advice-title-row h1 {
+  margin: 0;
   font: 46px/1.15 var(--font-display);
   letter-spacing: -0.6px;
   scroll-margin-top: 130px;
@@ -228,7 +229,7 @@
 }
 .advice-reader {
   scroll-margin-top: 125px;
-  margin-top: 25px;
+  margin-top: 0;
   padding: 30px;
   border: 1px solid var(--line);
   background: #f5f6f2;
@@ -237,6 +238,9 @@
   outline: none;
 }
 .advice-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
   background: none;
   color: var(--accent);
   font-size: 12px;
@@ -258,6 +262,7 @@
   color: var(--muted);
 }
 .advice-article-title {
+  margin: 0;
   font: 40px/1.2 var(--font-display);
   letter-spacing: -0.3px;
   max-width: 650px;
@@ -349,7 +354,7 @@
   margin: 0 0 18px;
 }
 @media (max-width: 650px) {
-  .advice-title-row h2 {
+  .advice-title-row h1 {
     font-size: 36px;
     scroll-margin-top: 178px;
   }
@@ -469,5 +474,26 @@
   .advice-table th,
   .advice-table td {
     padding: 10px;
+  }
+}
+
+.page-back {
+  margin-bottom: 30px;
+  padding: 9px 13px;
+  border: 1px solid var(--line);
+}
+.page-back:hover {
+  background: var(--light);
+}
+.route-not-found {
+  padding: 60px 0;
+}
+.route-not-found h1 {
+  font-size: clamp(32px, 5vw, 48px);
+  margin-bottom: 28px;
+}
+@media (max-width: 650px) {
+  .patient-section {
+    padding-top: 28px;
   }
 }

@@ -1,4 +1,5 @@
 import Icon from 'components/common/Icon';
+import SiteLink from 'components/common/SiteLink';
 
 const Overview = ({ t }) => {
   return (
@@ -26,12 +27,12 @@ const Overview = ({ t }) => {
         </p>
       </div>
       <div className='hero-actions'>
-        <a className='primary-button' href='#patient-advice'>
+        <SiteLink className='primary-button' to='/patient-advice'>
           {t('Patient recommendations')} <Icon name='arrow' />
-        </a>
-        <a className='inline-link' href='#academic-profile'>
-          {t('Academic profile')} <span>↓</span>
-        </a>
+        </SiteLink>
+        <SiteLink className='inline-link' to='/academic-profile'>
+          {t('Academic profile')} <span>↗</span>
+        </SiteLink>
       </div>
     </section>
   );

@@ -7,7 +7,7 @@ import App from 'App';
 import { Language } from 'constants/languages';
 
 beforeEach(() => {
-  window.history.replaceState(null, '', '/');
+  window.history.replaceState(null, '', '/publications');
   localStorage.clear();
   global.fetch = jest.fn(() => new Promise(() => {}));
   window.IntersectionObserver = jest.fn(() => ({
@@ -52,14 +52,10 @@ test('switches the full profile while preserving filters and original academic r
   expect(document.title).toContain('Akademik Profil');
   expect(
     screen.getByRole('heading', {
-      name: 'Deneyim ve eğitim',
+      name: 'Yayınlar',
     }),
   ).toBeInTheDocument();
-  expect(
-    screen.getByRole('heading', {
-      name: 'Üyelikler ve diller',
-    }),
-  ).toBeInTheDocument();
+  expect(screen.queryByRole('heading', { name: 'Üyelikler ve diller' })).not.toBeInTheDocument();
   expect(
     screen.getByRole('textbox', {
       name: 'Yayınlarda ara',
@@ -110,12 +106,13 @@ test('restores the saved preference and lets an explicit shared language overrid
       name: 'English',
     }),
   ).toHaveAttribute('aria-pressed', 'true');
-  expect(window.location.hash).toBe('#publications');
+  expect(window.location.pathname).toBe('/publications');
+  expect(window.location.hash).toBe('');
   expect(document.documentElement.lang).toBe(Language.ENGLISH);
 });
 
 test('Turkish publication type filters and empty-state reset use stable filter values', () => {
-  window.history.replaceState(null, '', '/?lang=tr');
+  window.history.replaceState(null, '', '/publications?lang=tr');
   jest.spyOn(Storage.prototype, 'setItem').mockImplementation(() => {
     throw new Error('Storage disabled');
   });

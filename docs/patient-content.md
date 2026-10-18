@@ -45,7 +45,7 @@ Attachment paths must remain under `files/`. Notes do not require an attachment.
 
 The reader's Copy link button creates a link such as:
 
-`https://your-domain.example/?lang=tr#patient-advice/tiroid-kontrolu`
+`https://your-domain.example/patient-advice/tiroid-kontrolu?lang=tr`
 
 Keep IDs stable so previously shared links continue to work. Removing a note or changing its status to draft makes its old link show a not-found message.
 

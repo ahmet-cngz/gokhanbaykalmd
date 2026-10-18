@@ -1,18 +1,11 @@
 import { LANGUAGE_LOCALES } from 'constants/languages';
 
-export const articlePrefix = '#patient-advice/';
-
-export const articleIdFromHash = () => {
-  return window.location.hash.startsWith(articlePrefix)
-    ? window.location.hash.slice(articlePrefix.length)
-    : '';
-};
+export const articlePath = (id) => `/patient-advice/${encodeURIComponent(id)}`;
 
 export const articleLink = (id, language) => {
-  const url = new URL(window.location.href);
+  const url = new URL(articlePath(id), window.location.origin);
 
   url.searchParams.set('lang', language);
-  url.hash = `${articlePrefix}${id}`;
 
   return url.href;
 };

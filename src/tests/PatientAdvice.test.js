@@ -2,6 +2,7 @@ import '@testing-library/jest-dom';
 
 import { render, screen, fireEvent, cleanup } from '@testing-library/react';
 import React from 'react';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 import PatientAdvice from 'components/patients/PatientAdvice';
 import { Language } from 'constants/languages';
@@ -60,8 +61,19 @@ const respond = (data) => ({
   json: async () => data,
 });
 
+const renderAdvice = (language) =>
+  render(
+    <BrowserRouter future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
+      <Routes>
+        <Route path='/patient-advice' element={<PatientAdvice language={language} />}>
+          <Route path=':articleId' element={null} />
+        </Route>
+      </Routes>
+    </BrowserRouter>,
+  );
+
 beforeEach(() => {
-  window.history.replaceState(null, '', '/?lang=tr');
+  window.history.replaceState(null, '', '/patient-advice?lang=tr');
   global.fetch = jest.fn().mockResolvedValue(respond(fixture()));
 });
 
@@ -71,7 +83,7 @@ afterEach(() => {
 });
 
 test('loads JSON at runtime, excludes drafts, filters by topic, and searches with Turkish characters', async () => {
-  render(<PatientAdvice language={Language.TURKISH} />);
+  renderAdvice(Language.TURKISH);
   expect(screen.getByRole('status')).toHaveTextContent('yükleniyor');
   await screen.findByRole('link', {
     name: 'Tiroid kontrolü',
@@ -137,14 +149,14 @@ test('loads JSON at runtime, excludes drafts, filters by topic, and searches wit
 });
 
 test('opens a direct link, falls back to Turkish, and copies the article URL with its language', async () => {
-  window.history.replaceState(null, '', '/?lang=en#patient-advice/ilk-not');
+  window.history.replaceState(null, '', '/patient-advice/ilk-not?lang=en');
   Object.defineProperty(navigator, 'clipboard', {
     configurable: true,
     value: {
       writeText: jest.fn().mockResolvedValue(),
     },
   });
-  render(<PatientAdvice language={Language.ENGLISH} />);
+  renderAdvice(Language.ENGLISH);
   await screen.findByRole('heading', {
     name: 'Tiroid kontrolü',
   });
@@ -157,14 +169,14 @@ test('opens a direct link, falls back to Turkish, and copies the article URL wit
   );
   await screen.findByText('Link copied');
   expect(navigator.clipboard.writeText).toHaveBeenCalledWith(
-    expect.stringContaining('?lang=en#patient-advice/ilk-not'),
+    expect.stringContaining('/patient-advice/ilk-not?lang=en'),
   );
   fireEvent.click(
-    screen.getByRole('button', {
+    screen.getByRole('link', {
       name: 'All recommendations',
     }),
   );
-  expect(window.location.hash).toBe('#patient-advice');
+  expect(window.location.pathname).toBe('/patient-advice');
   expect(
     screen.getByRole('link', {
       name: 'Tiroid kontrolü',
@@ -180,7 +192,7 @@ test('shows a recoverable error for invalid content, then loads a replaced JSON 
       }),
     )
     .mockResolvedValueOnce(respond(fixture()));
-  render(<PatientAdvice language={Language.TURKISH} />);
+  renderAdvice(Language.TURKISH);
   await screen.findByRole('alert');
   fireEvent.click(
     screen.getByRole('button', {
@@ -194,8 +206,8 @@ test('shows a recoverable error for invalid content, then loads a replaced JSON 
 });
 
 test('handles a removed or unpublished direct link without revealing the draft', async () => {
-  window.history.replaceState(null, '', '/#patient-advice/taslak-not');
-  render(<PatientAdvice language={Language.TURKISH} />);
+  window.history.replaceState(null, '', '/patient-advice/taslak-not');
+  renderAdvice(Language.TURKISH);
   await screen.findByRole('heading', {
     name: 'Bu not bulunamadı.',
   });
@@ -214,14 +226,14 @@ test('attachments stay inside the public content files directory and invalid dat
 });
 
 test('navigating browser history updates the reader without a fresh content fetch', async () => {
-  render(<PatientAdvice language={Language.TURKISH} />);
+  renderAdvice(Language.TURKISH);
   fireEvent.click(
     await screen.findByRole('link', {
       name: 'Tiroid kontrolü',
     }),
   );
-  expect(window.location.hash).toBe('#patient-advice/ilk-not');
-  window.history.replaceState(null, '', '/#patient-advice/diger-not');
+  expect(window.location.pathname).toBe('/patient-advice/ilk-not');
+  window.history.replaceState(null, '', '/patient-advice/diger-not');
   fireEvent(window, new PopStateEvent('popstate'));
   await screen.findByRole('heading', {
     name: 'Genel bilgiler',
@@ -281,8 +293,8 @@ test('renders the gestational diabetes targets as an accessible table', async ()
   const imported = require('../../public/content/patient-tips.json');
 
   fetch.mockResolvedValue(respond(imported));
-  window.history.replaceState(null, '', '/?lang=en#patient-advice/gestasyonel-diyabet');
-  render(<PatientAdvice language={Language.ENGLISH} />);
+  window.history.replaceState(null, '', '/patient-advice/gestasyonel-diyabet?lang=en');
+  renderAdvice(Language.ENGLISH);
   expect(await screen.findByRole('table')).toBeInTheDocument();
   expect(
     screen.getByRole('columnheader', {

@@ -1,37 +1,37 @@
-import Affiliations from 'components/profile/Affiliations';
-import Experience from 'components/profile/Experience';
-import Presentations from 'components/profile/Presentations';
-import ProfessionalDevelopment from 'components/profile/ProfessionalDevelopment';
-import Publications from 'components/profile/Publications';
+import SiteLink from 'components/common/SiteLink';
+import { academicPages } from 'data/navigation';
 
-const AcademicProfile = ({ t, language }) => {
+const AcademicProfile = ({ t }) => {
   return (
     <>
-      <div id='academic-profile' className='academic-introduction'>
+      <div id='academic-profile' className='academic-introduction academic-page'>
+        <SiteLink className='page-return' to='/'>
+          ← {t('Back to home')}
+        </SiteLink>
         <p className='eyebrow'>{t('GET TO KNOW YOUR DOCTOR')}</p>
-        <h2>{t('Academic profile')}</h2>
+        <h1>{t('Academic profile')}</h1>
         <p className='academic-description'>
           {t('Clinical training, research, and professional development.')}
         </p>
         <div className='stats'>
-          <a href='#publications'>
+          <SiteLink to='/publications'>
             <strong>
               15<span> /</span>
             </strong>
             <span>{t('Publication entries')}</span>
-          </a>
-          <a href='#presentations'>
+          </SiteLink>
+          <SiteLink to='/presentations'>
             <strong>
               29<span> /</span>
             </strong>
             <span>{t('Conference presentations')}</span>
-          </a>
-          <a href='#experience'>
+          </SiteLink>
+          <SiteLink to='/experience'>
             <strong>
               2013<span> /</span>
             </strong>
             <span>{t('Medical degree awarded')}</span>
-          </a>
+          </SiteLink>
         </div>
         <div className='research-strip'>
           <span className='eyebrow'>{t('RESEARCH THEMES')}</span>
@@ -43,11 +43,15 @@ const AcademicProfile = ({ t, language }) => {
           </div>
         </div>
       </div>
-      <Experience t={t} />
-      <Publications t={t} language={language} />
-      <Presentations t={t} />
-      <ProfessionalDevelopment t={t} />
-      <Affiliations t={t} />
+      <div className='academic-page-links'>
+        {academicPages.map(([path, label], index) => (
+          <SiteLink to={path} key={path}>
+            <span className='eyebrow'>{String(index + 1).padStart(2, '0')}</span>
+            <h2>{t(label)}</h2>
+            <span aria-hidden='true'>↗</span>
+          </SiteLink>
+        ))}
+      </div>
     </>
   );
 };

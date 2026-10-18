@@ -1,50 +1,35 @@
-import { useEffect, useRef, useState } from 'react';
+import { useParams, useSearchParams } from 'react-router-dom';
 
+import SiteLink from 'components/common/SiteLink';
 import ArticleCard from 'components/patients/ArticleCard';
 import ArticleReader from 'components/patients/ArticleReader';
 import { Language } from 'constants/languages';
 import usePatientContent from 'hooks/usePatientContent';
 import { filterArticles } from 'utils/patientContent';
-import { articleIdFromHash, articlePrefix } from 'utils/patientNavigation';
 import 'styles/patientAdvice.css';
 
 const PatientAdvice = ({ language }) => {
   const tr = language === Language.TURKISH;
   const { data, status, retry } = usePatientContent();
-  const [query, setQuery] = useState('');
-  const [category, setCategory] = useState('all');
-  const [selected, setSelected] = useState(articleIdFromHash);
-  const listHeading = useRef(null);
+  const { articleId: selected } = useParams();
+  const [searchParams, setSearchParams] = useSearchParams();
+  const query = searchParams.get('q') || '';
+  const category = searchParams.get('category') || 'all';
+  const updateFilters = (values) => {
+    setSearchParams(
+      (current) => {
+        Object.entries(values).forEach(([key, value]) => {
+          if (value && value !== 'all') {
+            current.set(key, value);
+          } else {
+            current.delete(key);
+          }
+        });
 
-  useEffect(() => {
-    const update = () => {
-      setSelected(articleIdFromHash());
-    };
-
-    window.addEventListener('hashchange', update);
-    window.addEventListener('popstate', update);
-
-    return () => {
-      window.removeEventListener('hashchange', update);
-      window.removeEventListener('popstate', update);
-    };
-  }, []);
-
-  const navigate = (id) => {
-    const hash = id ? `${articlePrefix}${id}` : '#patient-advice';
-
-    window.history.pushState(null, '', hash);
-    setSelected(id);
-
-    if (!id) {
-      listHeading.current?.focus({
-        preventScroll: true,
-      });
-      listHeading.current?.scrollIntoView?.({
-        behavior: 'instant',
-        block: 'start',
-      });
-    }
+        return current;
+      },
+      { replace: true },
+    );
   };
 
   const categoryTitle = (id) => {
@@ -61,24 +46,38 @@ const PatientAdvice = ({ language }) => {
   });
 
   return (
-    <section id='patient-advice' className='patient-section' aria-labelledby='advice-title'>
-      <div className='patient-section-heading'>
-        <p className='eyebrow'>{tr ? 'HASTA BİLGİLENDİRME' : 'PATIENT INFORMATION'}</p>
-        <div className='advice-title-row'>
-          <h2 id='advice-title' ref={listHeading} tabIndex={-1}>
-            {tr ? 'Hastalara Öneriler' : 'Patient recommendations'}
-          </h2>
-          <span className='advice-symbol' aria-hidden='true'>
-            ↗
-          </span>
-        </div>
-        <p>
-          {tr
-            ? 'Bilgilendirme notlarını keşfedin. Konuya göre arayın, okuyun ve ihtiyaç duyduğunuzda tekrar ulaşmak için kaydedin.'
-            : 'Explore information notes. Browse by topic, read at your own pace, and save useful notes to revisit later.'}
-        </p>
-      </div>
+    <section
+      id='patient-advice'
+      className='patient-section'
+      aria-label={tr ? 'Hasta bilgilendirme' : 'Patient information'}
+    >
+      {!selected && (
+        <>
+          <SiteLink className='advice-back page-back' to='/'>
+            <span aria-hidden='true'>←</span> {tr ? 'Ana sayfaya dön' : 'Back to home'}
+          </SiteLink>
+          <div className='patient-section-heading'>
+            <p className='eyebrow'>{tr ? 'HASTA BİLGİLENDİRME' : 'PATIENT INFORMATION'}</p>
+            <div className='advice-title-row'>
+              <h1 id='advice-title'>{tr ? 'Hastalara Öneriler' : 'Patient recommendations'}</h1>
+              <span className='advice-symbol' aria-hidden='true'>
+                ↗
+              </span>
+            </div>
+            <p>
+              {tr
+                ? 'Bilgilendirme notlarını keşfedin. Konuya göre arayın, okuyun ve ihtiyaç duyduğunuzda tekrar ulaşmak için kaydedin.'
+                : 'Explore information notes. Browse by topic, read at your own pace, and save useful notes to revisit later.'}
+            </p>
+          </div>
+        </>
+      )}
 
+      {selected && status !== 'ready' && (
+        <SiteLink className='advice-back page-back' to='/patient-advice'>
+          ← {tr ? 'Tüm öneriler' : 'All recommendations'}
+        </SiteLink>
+      )}
       {status === 'loading' && (
         <p className='advice-state' role='status'>
           {tr ? 'Bilgilendirme notları yükleniyor…' : 'Loading information notes…'}
@@ -100,7 +99,6 @@ const PatientAdvice = ({ language }) => {
           article={article}
           language={language}
           categoryTitle={article ? categoryTitle(article.category) : ''}
-          onBack={() => navigate('')}
         />
       )}
 
@@ -111,7 +109,7 @@ const PatientAdvice = ({ language }) => {
               <span aria-hidden='true'>⌕</span>
               <input
                 value={query}
-                onChange={(event) => setQuery(event.target.value)}
+                onChange={(event) => updateFilters({ q: event.target.value })}
                 aria-label={tr ? 'Önerilerde ara' : 'Search recommendations'}
                 placeholder={tr ? 'Bir konu veya kelime arayın…' : 'Search for a topic or keyword…'}
               />
@@ -127,14 +125,17 @@ const PatientAdvice = ({ language }) => {
             role='group'
             aria-label={tr ? 'Konu seçimi' : 'Choose a topic'}
           >
-            <button aria-pressed={category === 'all'} onClick={() => setCategory('all')}>
+            <button
+              aria-pressed={category === 'all'}
+              onClick={() => updateFilters({ category: 'all' })}
+            >
               {tr ? 'Tüm konular' : 'All topics'}
             </button>
             {data.categories.map((item) => (
               <button
                 key={item.id}
                 aria-pressed={category === item.id}
-                onClick={() => setCategory(item.id)}
+                onClick={() => updateFilters({ category: item.id })}
               >
                 {item.title[language] || item.title[Language.TURKISH]}
               </button>
@@ -147,7 +148,6 @@ const PatientAdvice = ({ language }) => {
                 article={item}
                 language={language}
                 categoryTitle={categoryTitle(item.category)}
-                onOpen={navigate}
               />
             ))}
           </div>
@@ -179,8 +179,7 @@ const PatientAdvice = ({ language }) => {
               <button
                 className='advice-outline-button'
                 onClick={() => {
-                  setQuery('');
-                  setCategory('all');
+                  updateFilters({ q: '', category: 'all' });
                 }}
               >
                 {tr ? 'Tüm notları göster' : 'Show all notes'}

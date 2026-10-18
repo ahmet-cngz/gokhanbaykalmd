@@ -1,6 +1,6 @@
 # Rıza Gökhan Baykal — Academic Profile
 
-A responsive React academic CV based on the supplied curriculum vitae. Includes clinical experience, education, searchable publications with year and type filters, full citations and DOI links, conference presentations, professional development, society memberships, and language assessments.
+A responsive React academic CV based on the supplied curriculum vitae. Includes clinical experience, education, searchable publications with year and type filters, full citations and DOI links, conference presentations, society memberships, and language assessments.
 
 ## Local development
 
@@ -48,12 +48,12 @@ src/
   index.js               React entry point
   components/
     common/              Icons, headings, language switch
-    layout/              Header, sidebar, footer
+    layout/              Header navigation, page frame, footer
     profile/             Overview and academic CV sections
     patients/            Patient library, article cards, reader, body blocks
   assets/               Bundled vector assets
   data/                 CV records, profile details, navigation
-  hooks/                Language, section navigation, fetching, clipboard
+  hooks/                Language, page navigation, fetching, clipboard
   styles/               Shared and patient section styles
   utils/                Translation, content validation/search, article URLs
   tests/                Integration and content tests
@@ -61,7 +61,7 @@ public/content/          JSON and attachments fetched at runtime
 docs/                    Editing guide and original source documents
 ```
 
-`App.js` composes the page; feature components own their local UI state. Shared hooks handle browser side effects. The patient JSON remains in `public/content/` so it can be replaced on the host without recompiling the application. Bundled visual assets belong in `src/assets/`.
+`App.js` defines the React Router pages and shared layout; feature components own their local UI state. Shared hooks handle browser side effects. The patient JSON remains in `public/content/` so it can be replaced on the host without recompiling the application. Bundled visual assets belong in `src/assets/`.
 
 Run regression checks with `CI=true npm test -- --watchAll=false --runInBand` and build with `npm run build`.
 
@@ -84,3 +84,9 @@ Separate imports, hook effects, guard clauses, and returns with blank lines. Use
 Use imports rooted at `src`, such as `import AcademicProfile from "components/profile/AcademicProfile"`. `jsconfig.json` configures this for the build, tests, and editor. ESLint rejects relative imports, orders imports alphabetically within dependency groups, and separates external packages from internal modules. The deployment workflow runs lint before tests and the production build.
 
 Run `npm run format` to format all supported project files using single quotes (including JSX), or `npm run format:check` to check formatting. JSON retains double quotes as required by its syntax.
+
+## Page navigation
+
+React Router (`react-router-dom`) provides separate pages for `/` (overview), `/patient-advice` (recommendations), `/patient-advice/:articleId` (information note), `/academic-profile` (academic overview), `/experience`, `/publications`, `/presentations`, and `/affiliations`. The retired `/development` page redirects to the academic overview. The shared header replaces the sidebar, highlights the current page, and collapses into a menu on smaller screens. Each academic page has its own heading and a return link to the academic overview. Search and category filters remain in the URL between the patient list and reader; other navigation retains the chosen language. Old section hashes such as `#publications` and `#patient-advice/:articleId` redirect to the corresponding pages.
+
+GitHub Pages uses `public/404.html` to send direct page requests through the root document; `src/utils/restorePageRoute.js` restores the original URL before React mounts. Deploy both files with the build. Other hosts should rewrite unknown application paths to `index.html`. The Pages redirect assumes the existing custom-domain root deployment; adjust it if hosting in a subdirectory.

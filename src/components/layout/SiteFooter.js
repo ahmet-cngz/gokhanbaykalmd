@@ -1,8 +1,10 @@
+import SiteLink from 'components/common/SiteLink';
+
 const SiteFooter = ({ t }) => {
   return (
     <footer>
       <span>Rıza Gökhan Baykal, MD</span>
-      <a href='#overview'>{t('Back to top ↑')}</a>
+      <SiteLink to='/'>{t('Overview')}</SiteLink>
     </footer>
   );
 };

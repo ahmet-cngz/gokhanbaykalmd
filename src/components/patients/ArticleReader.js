@@ -1,12 +1,13 @@
 import { useEffect, useRef } from 'react';
 
+import SiteLink from 'components/common/SiteLink';
 import ArticleBody from 'components/patients/ArticleBody';
 import { Language } from 'constants/languages';
 import useCopyLink from 'hooks/useCopyLink';
 import { attachmentUrl, localArticle } from 'utils/patientContent';
 import { articleLink, formatArticleDate } from 'utils/patientNavigation';
 
-const ArticleReader = ({ article, language, categoryTitle, onBack }) => {
+const ArticleReader = ({ article, language, categoryTitle }) => {
   const tr = language === Language.TURKISH;
   const content = article && localArticle(article, language);
   const reader = useRef(null);
@@ -30,9 +31,9 @@ const ArticleReader = ({ article, language, categoryTitle, onBack }) => {
       tabIndex={-1}
       aria-label={tr ? 'Bilgilendirme notu' : 'Information note'}
     >
-      <button className='advice-back' onClick={onBack}>
+      <SiteLink className='advice-back' to='/patient-advice'>
         <span aria-hidden='true'>←</span> {tr ? 'Tüm öneriler' : 'All recommendations'}
-      </button>
+      </SiteLink>
       {!article ? (
         <div className='advice-state'>
           <h3>{tr ? 'Bu not bulunamadı.' : 'This note was not found.'}</h3>
@@ -56,7 +57,7 @@ const ArticleReader = ({ article, language, categoryTitle, onBack }) => {
             </p>
           )}
           <div lang={content.language}>
-            <h3 className='advice-article-title'>{content.title}</h3>
+            <h1 className='advice-article-title'>{content.title}</h1>
             <p className='advice-article-summary'>{content.summary}</p>
             <ArticleBody blocks={content.body} />
           </div>

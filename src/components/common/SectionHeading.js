@@ -4,7 +4,7 @@ const SectionHeading = ({ number, eyebrow, title, children }) => {
       <div className='section-number'>{number}</div>
       <div>
         <p className='eyebrow'>{eyebrow}</p>
-        <h2>{title}</h2>
+        <h1>{title}</h1>
       </div>
       {children}
     </div>

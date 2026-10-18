@@ -1,10 +1,32 @@
 import { useEffect, useState } from 'react';
+import { useLocation, useNavigate } from 'react-router-dom';
 
-import { Language } from 'constants/languages';
+import { Language, SUPPORTED_LANGUAGES } from 'constants/languages';
 import { initialLanguage, translate } from 'utils/i18n';
 
 const useLanguage = () => {
-  const [language, setLanguage] = useState(initialLanguage);
+  const [savedLanguage] = useState(initialLanguage);
+  const { pathname, search, hash } = useLocation();
+  const navigate = useNavigate();
+  const requestedLanguage = new URLSearchParams(search).get('lang');
+  const language = SUPPORTED_LANGUAGES.includes(requestedLanguage)
+    ? requestedLanguage
+    : savedLanguage;
+  const setLanguage = (value) => {
+    const params = new URLSearchParams(search);
+
+    params.set('lang', value);
+    navigate({ pathname, search: `?${params}`, hash }, { replace: true });
+  };
+
+  useEffect(() => {
+    if (requestedLanguage !== language) {
+      const params = new URLSearchParams(search);
+
+      params.set('lang', language);
+      navigate({ pathname, search: `?${params}`, hash }, { replace: true });
+    }
+  }, [language, requestedLanguage, navigate, pathname, search, hash]);
 
   useEffect(() => {
     document.documentElement.lang = language;
@@ -27,11 +49,6 @@ const useLanguage = () => {
     } catch {
       /* Selection still works when storage is unavailable. */
     }
-
-    const url = new URL(window.location.href);
-
-    url.searchParams.set('lang', language);
-    window.history.replaceState(null, '', url);
   }, [language]);
 
   return {

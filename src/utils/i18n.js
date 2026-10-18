@@ -4,6 +4,11 @@ import { DEFAULT_LANGUAGE, Language, SUPPORTED_LANGUAGES } from 'constants/langu
 // retain their source language so the academic record remains accurate.
 
 export const turkish = {
+  'Main navigation': 'Ana menü',
+  Menu: 'Menü',
+  'Close menu': 'Menüyü kapat',
+  'Back to home': 'Ana sayfaya dön',
+  'Page not found': 'Sayfa bulunamadı',
   'Patient recommendations': 'Hastalara Öneriler',
   'PATIENT INFORMATION & ACADEMIC PROFILE': 'HASTA BİLGİLENDİRME VE AKADEMİK PROFİL',
   'PATIENTS & RESEARCH': 'HASTALAR VE ARAŞTIRMA',
