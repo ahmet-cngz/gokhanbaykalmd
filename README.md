@@ -67,9 +67,9 @@ Run regression checks with `CI=true npm test -- --watchAll=false --runInBand` an
 
 ## GitHub Pages
 
-Production URL: https://ahmet-cngz.github.io/gokhanbaykalmd/
+Production URL: https://www.rizagokhanbaykal.com/
 
-The workflow in `.github/workflows/deploy-pages.yml` tests, builds, and deploys pushes to `develop`. It can also be started manually from the Actions tab. The `homepage` field in `package.json` ensures scripts, styles, patient JSON, and downloads use the repository's `/gokhanbaykalmd/` base path.
+The workflow in `.github/workflows/deploy-pages.yml` tests, builds, and deploys pushes to `develop`. It can also be started manually from the Actions tab. The `homepage` field in `package.json` ensures scripts, styles, patient JSON, and downloads load from the custom domain's root path.
 
 The repository owner must enable **Settings → Pages → Build and deployment → Source: GitHub Actions** once. Afterward, successful pushes to `develop` deploy automatically.
 
