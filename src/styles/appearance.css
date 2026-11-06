@@ -35,20 +35,20 @@
     --ink: #1b3349;
     --muted: #5e6d7c;
     --line: #dce3ec;
-    --accent: #16796f;
-    --light: #e4f3ed;
+    --accent: #826313;
+    --light: #efe2b9;
     --violet: #7054ad;
     --blue: #326aa0;
     --terracotta: #a74f39;
   }
   body {
     background:
-      radial-gradient(ellipse at 0 20%, #e6f3ef99, transparent 45%),
+      radial-gradient(ellipse at 0 20%, #f0e6ca99, transparent 45%),
       radial-gradient(ellipse at 100% 80%, #eeebf899, transparent 45%), var(--paper);
   }
   ::selection {
-    background: #c8e9df;
-    color: #173e36;
+    background: #e6d294;
+    color: #3b2d0b;
   }
   .site-masthead {
     background: #f7f8fcf2;
@@ -62,7 +62,7 @@
     left: 0;
     right: 0;
     height: 3px;
-    background: linear-gradient(90deg, #34a68e, #6797c8 48%, #a492ce 75%, #e4a88c);
+    background: linear-gradient(90deg, #b08a2b, #6797c8 48%, #a492ce 75%, #e4a88c);
   }
   .primary-navigation > a {
     transition: color 180ms ease;
@@ -92,7 +92,7 @@
   }
   .site-main {
     --page-accent: var(--accent);
-    --page-tint: #e4f3ed;
+    --page-tint: #efe2b9;
   }
   .site-main[data-page='publications'],
   .site-main[data-page='academic-profile'] {
@@ -109,13 +109,13 @@
     overflow: hidden;
     margin-top: 30px;
     padding: 38px 42px;
-    border: 1px solid #244e60;
+    border: 1px solid #253f68;
     border-radius: 24px;
     color: #f4faf9;
     background:
-      radial-gradient(ellipse at 100% 10%, #3a7b7680, transparent 55%),
-      linear-gradient(125deg, #173247, #203f50 65%, #24554f);
-    box-shadow: 0 18px 48px #15384a12;
+      radial-gradient(ellipse at 100% 10%, #294b7a66, transparent 55%),
+      linear-gradient(125deg, #0b192f, #112744 65%, #17365b);
+    box-shadow: 0 18px 48px #0b192f1a;
   }
   .overview::before,
   .overview::after {
@@ -127,11 +127,11 @@
     aspect-ratio: 1;
     right: -72px;
     top: 110px;
-    border: 1px solid #a4d7cb38;
+    border: 1px solid #a4c2e638;
     border-radius: 50%;
     box-shadow:
-      0 0 0 35px #a4d7cb09,
-      0 0 0 70px #a4d7cb08;
+      0 0 0 35px #a4c2e609,
+      0 0 0 70px #a4c2e608;
     animation: orbit-arrive 1.1s ease-out both;
   }
   .overview::after {
@@ -143,11 +143,9 @@
     box-shadow: 0 0 24px #edb99555;
     animation-delay: 120ms;
   }
-  .overview .profile-kicker,
   .overview .hero-specialty {
-    color: #b0e6d3;
+    color: #e4cc88;
   }
-  .overview .edition,
   .overview .current-label,
   .overview .current-position p span {
     color: #c2d3dd;
@@ -160,31 +158,27 @@
     max-width: 700px;
     text-wrap: balance;
   }
-  .overview .status-dot {
-    background: #a9e8cf;
-    box-shadow: 0 0 0 4px #a9e8cf18;
-  }
   .overview .hero-period {
     color: #f0ba95;
   }
   .overview .current-position {
-    border-color: #72b9a4;
+    border-color: #b39443;
   }
   .overview .hero-actions {
     margin-bottom: 0;
   }
   .overview .primary-button {
-    background: #b6ead5;
-    color: #173e36;
+    background: #d6b353;
+    color: #3b2d0b;
   }
   .overview .primary-button:hover {
-    background: #d1f4e5;
+    background: #e2c574;
   }
   .overview .inline-link {
     color: #f3f8fa;
   }
   .overview a:focus-visible {
-    outline-color: #b6ead5;
+    outline-color: #d6b353;
   }
   .primary-button,
   .download-button,
@@ -198,11 +192,11 @@
   }
   .primary-button {
     background: var(--accent);
-    box-shadow: 0 4px 12px #16796f18;
+    box-shadow: 0 4px 12px #82631318;
   }
   .primary-button:hover {
-    background: #11675f;
-    box-shadow: 0 7px 18px #16796f28;
+    background: #6c510d;
+    box-shadow: 0 7px 18px #82631328;
   }
   .primary-button svg,
   .inline-link > span,
@@ -224,9 +218,9 @@
   .site-paths > a,
   .site-paths > a + a {
     padding: 28px;
-    border: 1px solid #c4e2d7;
+    border: 1px solid #cdb773;
     border-radius: 18px;
-    background: #e7f4ed;
+    background: #e5d49b;
     transition:
       transform 240ms ease,
       box-shadow 240ms ease,
@@ -237,7 +231,7 @@
     border-color: #dcd3ee;
   }
   .site-paths > a .eyebrow {
-    color: #256652;
+    color: #715512;
   }
   .site-paths > a + a .eyebrow,
   .site-paths > a + a .path-arrow,
@@ -280,9 +274,9 @@
   .current-badge {
     width: fit-content;
     padding: 3px 8px;
-    background: #def2e7;
+    background: #efe2b9;
     border-radius: 20px;
-    color: #24624e;
+    color: #715512;
   }
   .timeline-content::before {
     width: 7px;
@@ -291,7 +285,7 @@
     background: #87acba;
   }
   .timeline-entry:first-child .timeline-content::before {
-    box-shadow: 0 0 0 4px #16796f15;
+    box-shadow: 0 0 0 4px #82631315;
   }
   .research-strip > div span {
     padding: 5px 10px;
@@ -328,7 +322,7 @@
     transform: translateY(-3px);
   }
   .advice-card {
-    border-color: #d5e5df;
+    border-color: #e3d6af;
     border-radius: 16px;
     background: #fff;
     transition:
@@ -337,12 +331,12 @@
       border-color 240ms ease;
   }
   .advice-card-featured {
-    background: #e3f3eb;
+    background: #efe2b9;
     border-top-color: var(--accent);
   }
   .advice-reader {
     background: #fff;
-    border-color: #d5e5df;
+    border-color: #e3d6af;
     border-radius: 18px;
     box-shadow: 0 12px 32px #20374606;
   }
@@ -425,9 +419,6 @@
     padding: 26px 24px;
     margin-top: 22px;
     border-radius: 18px;
-  }
-  .overview .edition {
-    display: none;
   }
   .overview h1 {
     font-size: clamp(42px, 11vw, 65px);

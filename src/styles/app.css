@@ -266,26 +266,6 @@ main {
 .overview {
   padding-top: 52px;
 }
-.profile-kicker {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  font-size: 9px;
-  letter-spacing: 1.7px;
-  color: var(--accent);
-}
-.status-dot {
-  width: 5px;
-  height: 5px;
-  background: var(--accent);
-  border-radius: 50%;
-}
-.edition {
-  margin-left: auto;
-  font-size: 8px;
-  letter-spacing: 1.8px;
-  color: #92978e;
-}
 h1 {
   font: clamp(65px, 6.8vw, 99px)/0.98 var(--font-display);
   letter-spacing: -2px;
@@ -951,9 +931,6 @@ footer a:hover {
   main {
     padding: 0 40px;
   }
-  .edition {
-    display: none;
-  }
   .hero-specialty {
     font-size: 15px;
   }
@@ -1052,9 +1029,6 @@ footer a:hover {
     letter-spacing: -3px;
     margin-top: 30px;
   }
-  .edition {
-    display: inline;
-  }
   .hero-description {
     font-size: 13px;
   }
@@ -1113,13 +1087,6 @@ footer a:hover {
   }
   main {
     padding: 0 22px;
-  }
-  .profile-kicker {
-    font-size: 8px;
-    letter-spacing: 1.2px;
-  }
-  .edition {
-    display: none;
   }
   h1 {
     font-size: 67px;
@@ -1410,9 +1377,6 @@ footer a:hover {
   }
   .section-heading h2 {
     font-size: 30px;
-  }
-  .profile-kicker {
-    color: var(--ink);
   }
   .research-strip {
     padding-top: 15px;

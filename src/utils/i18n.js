@@ -11,7 +11,6 @@ export const turkish = {
   'Page not found': 'Sayfa bulunamadı',
   'Patient recommendations': 'Hastalara Öneriler',
   'PATIENT INFORMATION & ACADEMIC PROFILE': 'HASTA BİLGİLENDİRME VE AKADEMİK PROFİL',
-  'PATIENTS & RESEARCH': 'HASTALAR VE ARAŞTIRMA',
   'FOR PATIENTS': 'HASTALAR İÇİN',
   'Academic profile': 'Akademik profil',
   'Patient information and academic work in endocrinology and metabolic diseases, together in one place.':
@@ -45,7 +44,6 @@ export const turkish = {
   'Metabolic Diseases': 'Metabolizma Hastalıkları',
   'CLINICAL PRACTICE.': 'KLİNİK UYGULAMA.',
   'ACADEMIC INQUIRY.': 'AKADEMİK ARAŞTIRMA.',
-  'PHYSICIAN & RESEARCHER': 'HEKİM VE ARAŞTIRMACI',
   'CURRICULUM VITAE': 'ÖZGEÇMİŞ',
   'Endocrinology & Metabolic Diseases': 'Endokrinoloji ve Metabolizma Hastalıkları',
   'A clinical and academic focus on endocrine disorders, metabolic health, and the role of data in advancing medical research.':

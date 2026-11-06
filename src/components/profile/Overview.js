@@ -4,10 +4,6 @@ import SiteLink from 'components/common/SiteLink';
 const Overview = ({ t }) => {
   return (
     <section id='overview' className='overview'>
-      <div className='profile-kicker'>
-        <span className='status-dot' /> {t('PHYSICIAN & RESEARCHER')}{' '}
-        <span className='edition'>{t('PATIENTS & RESEARCH')}</span>
-      </div>
       <h1>
         <span>Rıza Gökhan</span>Baykal<span className='degree'>, MD</span>
         <span className='hero-period'>.</span>
